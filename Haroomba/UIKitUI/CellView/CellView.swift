@@ -22,21 +22,17 @@ class CellView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        sizeConstraint = heightAnchor.constraint(equalToConstant: 10)
-
-        NSLayoutConstraint.activate([
-            heightAnchor.constraint(equalTo: widthAnchor),
-            sizeConstraint,
-        ])
-
+//        sizeConstraint = heightAnchor.constraint(equalToConstant: 10)
+//
+//        NSLayoutConstraint.activate([
+//            heightAnchor.constraint(equalTo: widthAnchor),
+//            sizeConstraint,
+//        ])
+//
         translatesAutoresizingMaskIntoConstraints = false
     }
 
-    func set(cellSize: CGFloat) {
-        sizeConstraint.constant = cellSize
-    }
-
     func configure(cellViewModel: CellViewModel) {
-        backgroundView.backgroundColor = cellViewModel.color
+        backgroundColor = cellViewModel.color
     }
 }

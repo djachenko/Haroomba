@@ -20,8 +20,8 @@ private struct CellPoint {
 }
 
 class BrickView: UIView {
-    private var subcells: [CellView] = (0..<4).map { _ in
-        .initFromNib()
+    private var subcells = (0..<4).map { _ in
+        CellView()
     }
 
     private var cellSize: CGFloat = 0
@@ -32,14 +32,12 @@ class BrickView: UIView {
         subcells.forEach {
             addSubview($0)
         }
+
+        translatesAutoresizingMaskIntoConstraints = false
     }
 
     func set(cellSize: CGFloat) {
         self.cellSize = cellSize
-
-        subcells.forEach {
-            $0.set(cellSize: cellSize)
-        }
     }
 
     func configure(viewModel: BrickViewModel) {
@@ -57,14 +55,11 @@ class BrickView: UIView {
             cellView.configure(cellViewModel: cellViewModel)
         }
 
-        frame.size = CGSize(
-            width: subcells.map { $0.frame.origin.x + $0.frame.width}.max() ?? 0,
-            height: subcells.map { $0.frame.origin.y + $0.frame.width}.max() ?? 0
-        )
-
-        frame.origin = CGPoint(
+        frame = CGRect(
             x: viewModel.origin.x * cellSize,
-            y: viewModel.origin.y * cellSize
+            y: viewModel.origin.y * cellSize,
+            width: subcells.map { $0.frame.origin.x + $0.frame.width }.max() ?? 0,
+            height: subcells.map { $0.frame.origin.y + $0.frame.height }.max() ?? 0
         )
     }
 }

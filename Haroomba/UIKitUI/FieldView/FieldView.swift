@@ -55,7 +55,7 @@ class FieldView: UIView {
 
 
         viewModel.cells.forEach { cellViewModel in
-            let cellView = cellsCache.popLast() ?? CellView.initFromNib()
+            let cellView = cellsCache.popLast() ?? CellView()
 
             cellView.frame = CGRect(
                 x: cellViewModel.x * cellSize,

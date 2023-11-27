@@ -22,7 +22,6 @@
 		BB887AA1241D32218F6A2629 /* BrickFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB88724EA7D1F7F01E329408 /* BrickFactory.swift */; };
 		BB887AE25474BBE49FDDBFEB /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887FB681A0BFA1E46D10FE /* Point.swift */; };
 		BB887C0AFF3344097451F2A7 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887E9F552865DA87AD22C4 /* Field.swift */; };
-		BB887EEB25BA3966837B1EED /* CellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB887EB5A91EDD23D1094D43 /* CellView.xib */; };
 		BB887F3661D750ED6D224AFD /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887EC71054816006DF6AF3 /* UIView+Extension.swift */; };
 		BB887FF1C6E2E03612C3737A /* Tetris.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8870ECBDDEAB907C929647 /* Tetris.swift */; };
 		D0E6EFF52B0CBA03000D8048 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E6EFF42B0CBA03000D8048 /* AppDelegate.swift */; };
@@ -46,7 +45,6 @@
 		BB887D1D056AFE6936CD317D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BB887DE1E5F666EED1FEA2C9 /* CellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 		BB887E9F552865DA87AD22C4 /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
-		BB887EB5A91EDD23D1094D43 /* CellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellView.xib; sourceTree = "<group>"; };
 		BB887EC71054816006DF6AF3 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		BB887F3E1A7F7F976D00462E /* FieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
 		BB887FB681A0BFA1E46D10FE /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
@@ -73,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				BB887C5969F8B10C84B491B7 /* CellView.swift */,
-				BB887EB5A91EDD23D1094D43 /* CellView.xib */,
 			);
 			path = CellView;
 			sourceTree = "<group>";
@@ -223,7 +220,6 @@
 			files = (
 				D0E6F0012B0CBA04000D8048 /* LaunchScreen.storyboard in Resources */,
 				D0E6EFFE2B0CBA04000D8048 /* Assets.xcassets in Resources */,
-				BB887EEB25BA3966837B1EED /* CellView.xib in Resources */,
 				BB88756538B38C7859E3A095 /* GameViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
