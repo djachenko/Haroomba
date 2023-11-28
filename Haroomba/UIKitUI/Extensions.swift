@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import Tetris
 
-extension Dimension {
+extension Dimensions {
     var ratio: Double {
         Double(width) / Double(height)
     }

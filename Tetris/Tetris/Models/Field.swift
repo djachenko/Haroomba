@@ -7,13 +7,13 @@
 
 import Foundation
 
-class Field {
-    private(set) var cells: [[CellModel?]] = []
+public class Field {
+    public private(set) var cells: [[CellModel?]] = []
 
     let width: Int
     let height: Int
 
-    init(dimensions: Dimension) {
+    init(dimensions: Dimensions) {
         width = dimensions.width
         height = dimensions.height
 

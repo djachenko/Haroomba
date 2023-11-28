@@ -7,23 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB88701837F8DFA4907BE727 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB88731FD6C90E142131BC54 /* Dimension.swift */; };
 		BB8873EDA09FBF479CDF5F1B /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887C5969F8B10C84B491B7 /* CellView.swift */; };
-		BB8874341245F4957D04A2E9 /* GameAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8873E032AA631DF1AA44AC /* GameAssembly.swift */; };
-		BB887486790E37CF0053249E /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887DE1E5F666EED1FEA2C9 /* CellModel.swift */; };
-		BB8874EA769E766D82A8207E /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8871CD496DC97AE56EB967 /* Direction.swift */; };
 		BB88756538B38C7859E3A095 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB8877F180740F6768D7528E /* GameViewController.xib */; };
 		BB88758FA9930E2921F89E5A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8879241AB40D56DBD744B8 /* GameViewController.swift */; };
 		BB8876454E57D346D052A07A /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887F3E1A7F7F976D00462E /* FieldView.swift */; };
 		BB8877D085CDBB6F8E75B3BA /* GamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8871EC716EA38E0548A467 /* GamePresenter.swift */; };
-		BB88783B3D30F88D00BC36F2 /* Brick.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887093A04E4EB454EB40E3 /* Brick.swift */; };
 		BB887860E51BD8889020AA57 /* BrickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887216BA14C8B95AED78CA /* BrickView.swift */; };
 		BB887A6874AC791445EF0979 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887D1D056AFE6936CD317D /* Extensions.swift */; };
-		BB887AA1241D32218F6A2629 /* BrickFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB88724EA7D1F7F01E329408 /* BrickFactory.swift */; };
-		BB887AE25474BBE49FDDBFEB /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887FB681A0BFA1E46D10FE /* Point.swift */; };
-		BB887C0AFF3344097451F2A7 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887E9F552865DA87AD22C4 /* Field.swift */; };
 		BB887F3661D750ED6D224AFD /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887EC71054816006DF6AF3 /* UIView+Extension.swift */; };
-		BB887FF1C6E2E03612C3737A /* Tetris.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8870ECBDDEAB907C929647 /* Tetris.swift */; };
+		D09FC8892B150E6800ACF5FB /* Tetris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09FC8882B150E6800ACF5FB /* Tetris.framework */; };
 		D0E6EFF52B0CBA03000D8048 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E6EFF42B0CBA03000D8048 /* AppDelegate.swift */; };
 		D0E6EFF72B0CBA03000D8048 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E6EFF62B0CBA03000D8048 /* SceneDelegate.swift */; };
 		D0E6EFFE2B0CBA04000D8048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E6EFFD2B0CBA04000D8048 /* Assets.xcassets */; };
@@ -31,23 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BB887093A04E4EB454EB40E3 /* Brick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brick.swift; sourceTree = "<group>"; };
-		BB8870ECBDDEAB907C929647 /* Tetris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tetris.swift; sourceTree = "<group>"; };
-		BB8871CD496DC97AE56EB967 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		BB8871EC716EA38E0548A467 /* GamePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePresenter.swift; sourceTree = "<group>"; };
 		BB887216BA14C8B95AED78CA /* BrickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrickView.swift; sourceTree = "<group>"; };
-		BB88724EA7D1F7F01E329408 /* BrickFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrickFactory.swift; sourceTree = "<group>"; };
-		BB88731FD6C90E142131BC54 /* Dimension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
-		BB8873E032AA631DF1AA44AC /* GameAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameAssembly.swift; sourceTree = "<group>"; };
 		BB8877F180740F6768D7528E /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		BB8879241AB40D56DBD744B8 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		BB887C5969F8B10C84B491B7 /* CellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		BB887D1D056AFE6936CD317D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		BB887DE1E5F666EED1FEA2C9 /* CellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
-		BB887E9F552865DA87AD22C4 /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
 		BB887EC71054816006DF6AF3 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		BB887F3E1A7F7F976D00462E /* FieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
-		BB887FB681A0BFA1E46D10FE /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		D09FC8882B150E6800ACF5FB /* Tetris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Tetris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E6EFF12B0CBA03000D8048 /* Haroomba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Haroomba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E6EFF42B0CBA03000D8048 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0E6EFF62B0CBA03000D8048 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D09FC8892B150E6800ACF5FB /* Tetris.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,20 +58,6 @@
 				BB887C5969F8B10C84B491B7 /* CellView.swift */,
 			);
 			path = CellView;
-			sourceTree = "<group>";
-		};
-		BB8871BF0EF7DE88B3DB2394 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				BB887093A04E4EB454EB40E3 /* Brick.swift */,
-				BB8871CD496DC97AE56EB967 /* Direction.swift */,
-				BB887E9F552865DA87AD22C4 /* Field.swift */,
-				BB887DE1E5F666EED1FEA2C9 /* CellModel.swift */,
-				BB887FB681A0BFA1E46D10FE /* Point.swift */,
-				BB88724EA7D1F7F01E329408 /* BrickFactory.swift */,
-				BB88731FD6C90E142131BC54 /* Dimension.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		BB88773B3B33C1046979B447 /* Field */ = {
@@ -120,14 +91,12 @@
 			path = UIKitUI;
 			sourceTree = "<group>";
 		};
-		BB887DA657B295580ABEAE34 /* Game */ = {
+		D09FC8872B150E6800ACF5FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BB8871BF0EF7DE88B3DB2394 /* Models */,
-				BB8870ECBDDEAB907C929647 /* Tetris.swift */,
-				BB8873E032AA631DF1AA44AC /* GameAssembly.swift */,
+				D09FC8882B150E6800ACF5FB /* Tetris.framework */,
 			);
-			path = Game;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D0E6EFE82B0CBA03000D8048 = {
@@ -135,6 +104,7 @@
 			children = (
 				D0E6EFF32B0CBA03000D8048 /* Haroomba */,
 				D0E6EFF22B0CBA03000D8048 /* Products */,
+				D09FC8872B150E6800ACF5FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,7 +124,6 @@
 				D0E6EFFD2B0CBA04000D8048 /* Assets.xcassets */,
 				D0E6EFFF2B0CBA04000D8048 /* LaunchScreen.storyboard */,
 				D0E6F0022B0CBA04000D8048 /* Info.plist */,
-				BB887DA657B295580ABEAE34 /* Game */,
 				BB8878651805A3992D79C081 /* UIKitUI */,
 			);
 			path = Haroomba;
@@ -234,15 +203,6 @@
 				D0E6EFF52B0CBA03000D8048 /* AppDelegate.swift in Sources */,
 				D0E6EFF72B0CBA03000D8048 /* SceneDelegate.swift in Sources */,
 				BB887F3661D750ED6D224AFD /* UIView+Extension.swift in Sources */,
-				BB88783B3D30F88D00BC36F2 /* Brick.swift in Sources */,
-				BB8874EA769E766D82A8207E /* Direction.swift in Sources */,
-				BB887FF1C6E2E03612C3737A /* Tetris.swift in Sources */,
-				BB887C0AFF3344097451F2A7 /* Field.swift in Sources */,
-				BB887486790E37CF0053249E /* CellModel.swift in Sources */,
-				BB887AE25474BBE49FDDBFEB /* Point.swift in Sources */,
-				BB887AA1241D32218F6A2629 /* BrickFactory.swift in Sources */,
-				BB8874341245F4957D04A2E9 /* GameAssembly.swift in Sources */,
-				BB88701837F8DFA4907BE727 /* Dimension.swift in Sources */,
 				BB8873EDA09FBF479CDF5F1B /* CellView.swift in Sources */,
 				BB8877D085CDBB6F8E75B3BA /* GamePresenter.swift in Sources */,
 				BB88758FA9930E2921F89E5A /* GameViewController.swift in Sources */,

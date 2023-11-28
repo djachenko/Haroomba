@@ -84,6 +84,5 @@ class BrickFactory {
 
     func next() -> Brick {
         BrickFactory.prototypes.randomElement()!.copy()
-//        BrickFactory.I.copy()
     }
 }

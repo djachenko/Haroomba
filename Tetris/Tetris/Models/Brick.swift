@@ -7,10 +7,10 @@
 
 import Foundation
 
-class Brick {
-    var origin: Point
-    let points: [Point]
-    let center: CGPoint
+public class Brick {
+    public internal(set) var origin: Point
+    public let points: [Point]
+    public let center: CGPoint
 
     init(points: [Point], center: CGPoint, origin: Point = .zero) {
         self.points = points
@@ -56,9 +56,7 @@ extension Brick {
             )
         )
     }
-}
 
-extension Brick {
     func copy() -> Brick {
         Brick(
             points: points,

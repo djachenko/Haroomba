@@ -5,10 +5,11 @@
 //  Created by Igor Djachenko on 21.11.2023.
 //
 
-import Foundation
+import Tetris
+import CoreGraphics
 
 protocol GameViewProtocol: AnyObject {
-    func set(fieldDimension: Dimension)
+    func set(fieldDimension: Dimensions)
 
     func didUpdate(fieldViewModel: FieldViewModel)
     func didUpdate(brickViewModel: BrickViewModel)

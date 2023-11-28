@@ -7,4 +7,4 @@
 
 import UIKit
 
-struct CellModel {}
+public struct CellModel {}

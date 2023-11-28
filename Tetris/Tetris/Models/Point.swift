@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Point {
-    let x: Int
-    let y: Int
+public struct Point {
+    public let x: Int
+    public let y: Int
 
     static let zero = Point(x: 0, y: 0)
 }

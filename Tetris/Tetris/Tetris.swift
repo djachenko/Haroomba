@@ -7,23 +7,23 @@
 
 import Foundation
 
-struct TetrisParameters {
-    var fieldDimensions: Dimension
+public struct TetrisParameters {
+    public var fieldDimensions: Dimensions
 }
 
-protocol TetrisOutput: AnyObject {
+public protocol TetrisOutput: AnyObject {
     func didUpdate(parameters: TetrisParameters)
     func didUpdate(field: Field)
     func didUpdate(brick: Brick)
 }
 
-protocol TetrisInput {
+public protocol TetrisInput {
     func start()
     func move(direction: Direction)
     func rotate()
 }
 
-class Tetris {
+public class Tetris {
     private var currentBrick: Brick! // todo: multiple
     private var field: Field
 
@@ -32,10 +32,10 @@ class Tetris {
 
     private var points: Int = 0
 
-    var cycle: Any?
-    weak var output: TetrisOutput?
+    public var cycle: Any?
+    public weak var output: TetrisOutput?
 
-    init(brickFactory: BrickFactory, fieldDimensions: Dimension) {
+    init(brickFactory: BrickFactory, fieldDimensions: Dimensions) {
         factory = brickFactory
 
         field = Field(dimensions: fieldDimensions)
@@ -84,13 +84,13 @@ class Tetris {
 }
 
 extension Tetris: TetrisInput {
-    func start() {
+    public func start() {
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
             self.runLoop()
         }
 
         output?.didUpdate(parameters: TetrisParameters(
-            fieldDimensions: Dimension(
+            fieldDimensions: Dimensions(
                 width: field.width,
                 height: field.height
             )
@@ -111,11 +111,11 @@ extension Tetris: TetrisInput {
         output?.didUpdate(brick: nextBrick)
     }
 
-    func move(direction: Direction) {
+    public func move(direction: Direction) {
         update(nextBrick: currentBrick.moved(direction: direction))
     }
 
-    func rotate() {
+    public func rotate() {
         update(nextBrick: currentBrick.rotated())
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Tetris
 
 struct FieldViewModel {
     let cells: [CellViewModel]
@@ -28,7 +29,7 @@ class FieldView: UIView {
         ])
     }
 
-    func set(dimension: Dimension) {
+    func set(dimension: Dimensions) {
         let ratio = CGFloat(dimension.ratio)
 
         if ratio != ratioConstraint.multiplier {

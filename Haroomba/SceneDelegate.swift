@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Tetris
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -27,10 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         viewController.set(presenter: presenter)
         viewController.output = presenter
 
-        let tetris = Tetris(
-            brickFactory: BrickFactory(),
-            fieldDimensions: Dimension(width: 9, height: 13)
-        )
+        let tetris = GameAssembly.instance.game()
 
         tetris.cycle = tetris
         tetris.output = presenter

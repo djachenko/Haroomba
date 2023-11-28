@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Dimension {
-    let width: Int
-    let height: Int
+public struct Dimensions {
+    public let width: Int
+    public let height: Int
 }

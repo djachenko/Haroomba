@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Tetris
 
 class GameViewController: UIViewController {
     private enum Constants {
@@ -45,7 +46,7 @@ class GameViewController: UIViewController {
 }
 
 extension GameViewController: GameViewProtocol {
-    func set(fieldDimension: Dimension) {
+    func set(fieldDimension: Dimensions) {
         field.set(dimension: fieldDimension)
 
         brick.set(cellSize: field.frame.width / CGFloat(fieldDimension.width))
