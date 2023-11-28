@@ -7,6 +7,7 @@
 
 import UIKit
 import Tetris
+import TestUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -21,21 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         window = UIWindow(windowScene: windowScene)
-        
-        let viewController = GameViewController()
-
-        let presenter = GamePresenter()
-        viewController.set(presenter: presenter)
-        viewController.output = presenter
-
-        let tetris = GameAssembly.instance.game()
-
-        tetris.cycle = tetris
-        tetris.output = presenter
-
-        presenter.output = tetris
-
-        window?.rootViewController = viewController
+    
+        window?.rootViewController = TestUIAssembly.instance.vc()
         window?.makeKeyAndVisible()
     }
 

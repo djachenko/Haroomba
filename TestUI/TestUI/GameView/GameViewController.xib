@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameViewController" customModule="Haroomba" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameViewController" customModule="TestUI" customModuleProvider="target">
             <connections>
                 <outlet property="brick" destination="RYS-Mx-Phj" id="6CH-GL-NG6"/>
                 <outlet property="field" destination="ntC-e6-U7d" id="vbl-Op-NrO"/>
@@ -24,7 +24,7 @@
                     <rect key="frame" x="0.0" y="229.66666666666663" width="393" height="393"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ntC-e6-U7d" customClass="FieldView" customModule="Haroomba" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ntC-e6-U7d" customClass="FieldView" customModule="TestUI" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="229.66666666666663" width="393" height="393"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -34,7 +34,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GkF-KS-0eO" userLabel="Brick Window">
                     <rect key="frame" x="0.0" y="229.66666666666663" width="393" height="393"/>
                     <subviews>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RYS-Mx-Phj" customClass="BrickView" customModule="Haroomba" customModuleProvider="target">
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RYS-Mx-Phj" customClass="BrickView" customModule="TestUI" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="-200" width="0.0" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

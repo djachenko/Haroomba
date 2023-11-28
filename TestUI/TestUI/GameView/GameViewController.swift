@@ -8,7 +8,7 @@
 import UIKit
 import Tetris
 
-class GameViewController: UIViewController {
+public class GameViewController: UIViewController {
     private enum Constants {
         static let rowCount: CGFloat = 13
         static let columnCount: CGFloat = 9
@@ -18,15 +18,15 @@ class GameViewController: UIViewController {
     @IBOutlet private var brick: BrickView!
 
     var presenter: Any!
-    var output: GamePresenterInput?
+    public var output: GamePresenterInput?
 
-    func set(presenter: GamePresenter) {
+    public func set(presenter: GamePresenter) {
         self.presenter = presenter
 
         presenter.view = self
     }
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         output?.viewDidLoad()
