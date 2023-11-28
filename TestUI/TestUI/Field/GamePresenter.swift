@@ -15,7 +15,7 @@ protocol GameViewProtocol: AnyObject {
     func didUpdate(brickViewModel: BrickViewModel)
 }
 
-protocol GamePresenterInput {
+public protocol GamePresenterInput {
     func viewDidLoad()
 
     func didTapLeftButton()
@@ -23,16 +23,18 @@ protocol GamePresenterInput {
     func didTapRotateButton()
 }
 
-class GamePresenter {
+public class GamePresenter {
     weak var view: GameViewProtocol?
 
-    var output: TetrisInput?
+    public var output: TetrisInput?
 
     private var tetrisParameters: TetrisParameters!
+    
+    public init() {}
 }
 
 extension GamePresenter: TetrisOutput {
-    func didUpdate(parameters: TetrisParameters) {
+    public func didUpdate(parameters: TetrisParameters) {
         tetrisParameters = parameters
 
         DispatchQueue.main.async { [weak self] in
@@ -40,7 +42,7 @@ extension GamePresenter: TetrisOutput {
         }
     }
 
-    func didUpdate(field: Field) {
+    public func didUpdate(field: Field) {
         var cellModels = [CellViewModel]()
 
         field.cells.enumerated().forEach { y, row in
@@ -66,7 +68,7 @@ extension GamePresenter: TetrisOutput {
         }
     }
 
-    func didUpdate(brick: Brick) {
+    public func didUpdate(brick: Brick) {
         let viewModel = BrickViewModel(
             origin: CGPoint(
                 x: brick.origin.x,
@@ -88,19 +90,19 @@ extension GamePresenter: TetrisOutput {
 }
 
 extension GamePresenter: GamePresenterInput {
-    func viewDidLoad() {
+    public func viewDidLoad() {
         output?.start()
     }
 
-    func didTapLeftButton() {
+    public func didTapLeftButton() {
         output?.move(direction: .left)
     }
 
-    func didTapRightButton() {
+    public func didTapRightButton() {
         output?.move(direction: .right)
     }
 
-    func didTapRotateButton() {
+    public func didTapRotateButton() {
         output?.rotate()
     }
 }
