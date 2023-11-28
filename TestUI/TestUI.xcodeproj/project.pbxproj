@@ -14,7 +14,25 @@
 		D034CF862B1629D4005DBB7B /* GamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034CF7E2B1629D4005DBB7B /* GamePresenter.swift */; };
 		D034CF872B1629D4005DBB7B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034CF7F2B1629D4005DBB7B /* GameViewController.swift */; };
 		D034CF882B1629D4005DBB7B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034CF802B1629D4005DBB7B /* Extensions.swift */; };
+		D034CF912B162E37005DBB7B /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D034CF902B162E37005DBB7B /* GameViewController.xib */; };
+		D034CF972B1630FB005DBB7B /* TestUIAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034CF962B1630FB005DBB7B /* TestUIAssembly.swift */; };
+		D034CF9A2B163159005DBB7B /* Tetris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D034CF992B163159005DBB7B /* Tetris.framework */; };
+		D034CF9B2B163159005DBB7B /* Tetris.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D034CF992B163159005DBB7B /* Tetris.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D034CF9C2B163159005DBB7B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D034CF9B2B163159005DBB7B /* Tetris.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D034CF6C2B162991005DBB7B /* TestUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,6 +43,9 @@
 		D034CF7E2B1629D4005DBB7B /* GamePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePresenter.swift; sourceTree = "<group>"; };
 		D034CF7F2B1629D4005DBB7B /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		D034CF802B1629D4005DBB7B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D034CF902B162E37005DBB7B /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		D034CF962B1630FB005DBB7B /* TestUIAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUIAssembly.swift; sourceTree = "<group>"; };
+		D034CF992B163159005DBB7B /* Tetris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Tetris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D034CF9A2B163159005DBB7B /* Tetris.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +65,7 @@
 			children = (
 				D034CF6E2B162991005DBB7B /* TestUI */,
 				D034CF6D2B162991005DBB7B /* Products */,
+				D034CF982B163159005DBB7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,9 +82,10 @@
 			children = (
 				D034CF7A2B1629D4005DBB7B /* CellView */,
 				D034CF802B1629D4005DBB7B /* Extensions.swift */,
-				D034CF7C2B1629D4005DBB7B /* Field */,
+				D034CF7C2B1629D4005DBB7B /* GameView */,
 				D034CF762B1629D4005DBB7B /* FieldView */,
 				D034CF792B1629D4005DBB7B /* UIView+Extension.swift */,
+				D034CF962B1630FB005DBB7B /* TestUIAssembly.swift */,
 			);
 			path = TestUI;
 			sourceTree = "<group>";
@@ -83,13 +107,22 @@
 			path = CellView;
 			sourceTree = "<group>";
 		};
-		D034CF7C2B1629D4005DBB7B /* Field */ = {
+		D034CF7C2B1629D4005DBB7B /* GameView */ = {
 			isa = PBXGroup;
 			children = (
+				D034CF902B162E37005DBB7B /* GameViewController.xib */,
 				D034CF7E2B1629D4005DBB7B /* GamePresenter.swift */,
 				D034CF7F2B1629D4005DBB7B /* GameViewController.swift */,
 			);
-			path = Field;
+			path = GameView;
+			sourceTree = "<group>";
+		};
+		D034CF982B163159005DBB7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D034CF992B163159005DBB7B /* Tetris.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +146,7 @@
 				D034CF682B162991005DBB7B /* Sources */,
 				D034CF692B162991005DBB7B /* Frameworks */,
 				D034CF6A2B162991005DBB7B /* Resources */,
+				D034CF9C2B163159005DBB7B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D034CF912B162E37005DBB7B /* GameViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D034CF842B1629D4005DBB7B /* CellView.swift in Sources */,
+				D034CF972B1630FB005DBB7B /* TestUIAssembly.swift in Sources */,
 				D034CF832B1629D4005DBB7B /* UIView+Extension.swift in Sources */,
 				D034CF822B1629D4005DBB7B /* BrickView.swift in Sources */,
 				D034CF862B1629D4005DBB7B /* GamePresenter.swift in Sources */,
