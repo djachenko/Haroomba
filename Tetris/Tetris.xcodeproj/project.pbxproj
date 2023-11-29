@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB88709EEA7DE0603E99118F /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8874AF44F577228EBBFFDE /* Field.swift */; };
+		BB8878377A225466E776F9EF /* Brick.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887454AAB065883DB3E7BC /* Brick.swift */; };
 		BB887ABD68E3B37226E378CD /* BrickFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887DF31A35AD6E392A0B94 /* BrickFactory.swift */; };
 		CF76A05879F5C38967D34219 /* libPods-Tetris.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F74441AA2C28B69212C5BFD /* libPods-Tetris.a */; };
 		D09FC87E2B150D3B00ACF5FB /* Tetris.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09FC87C2B150D3B00ACF5FB /* Tetris.swift */; };
 		D09FC87F2B150D3B00ACF5FB /* TetrisDIPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09FC87D2B150D3B00ACF5FB /* TetrisDIPart.swift */; };
-		D09FC8802B150DA600ACF5FB /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09FC8762B150D3B00ACF5FB /* Field.swift */; };
-		D09FC8812B150DAA00ACF5FB /* Brick.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09FC8742B150D3B00ACF5FB /* Brick.swift */; };
 		D09FC8822B150DAE00ACF5FB /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09FC8752B150D3B00ACF5FB /* Direction.swift */; };
 		D09FC8832B150DC600ACF5FB /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09FC8772B150D3B00ACF5FB /* CellModel.swift */; };
 		D09FC8842B150DDE00ACF5FB /* Dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09FC87A2B150D3B00ACF5FB /* Dimensions.swift */; };
@@ -23,11 +23,11 @@
 		2F74441AA2C28B69212C5BFD /* libPods-Tetris.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tetris.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73F713256BEB1E58D7CC9190 /* Pods-Tetris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tetris.debug.xcconfig"; path = "Target Support Files/Pods-Tetris/Pods-Tetris.debug.xcconfig"; sourceTree = "<group>"; };
 		9D86970F16BBEBB0B9D74BB3 /* Pods-Tetris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tetris.release.xcconfig"; path = "Target Support Files/Pods-Tetris/Pods-Tetris.release.xcconfig"; sourceTree = "<group>"; };
+		BB887454AAB065883DB3E7BC /* Brick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brick.swift; sourceTree = "<group>"; };
+		BB8874AF44F577228EBBFFDE /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
 		BB887DF31A35AD6E392A0B94 /* BrickFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrickFactory.swift; sourceTree = "<group>"; };
 		D09FC86A2B150D2B00ACF5FB /* Tetris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tetris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D09FC8742B150D3B00ACF5FB /* Brick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brick.swift; sourceTree = "<group>"; };
 		D09FC8752B150D3B00ACF5FB /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
-		D09FC8762B150D3B00ACF5FB /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
 		D09FC8772B150D3B00ACF5FB /* CellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 		D09FC8782B150D3B00ACF5FB /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		D09FC87A2B150D3B00ACF5FB /* Dimensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dimensions.swift; sourceTree = "<group>"; };
@@ -53,6 +53,15 @@
 				2F74441AA2C28B69212C5BFD /* libPods-Tetris.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB887513BF4A1AC0DC6D6782 /* GameEntities */ = {
+			isa = PBXGroup;
+			children = (
+				BB887454AAB065883DB3E7BC /* Brick.swift */,
+				BB8874AF44F577228EBBFFDE /* Field.swift */,
+			);
+			path = GameEntities;
 			sourceTree = "<group>";
 		};
 		CF960CB82A44DA543B955856 /* Pods */ = {
@@ -90,6 +99,7 @@
 				D09FC87C2B150D3B00ACF5FB /* Tetris.swift */,
 				D09FC87D2B150D3B00ACF5FB /* TetrisDIPart.swift */,
 				BB887DF31A35AD6E392A0B94 /* BrickFactory.swift */,
+				BB887513BF4A1AC0DC6D6782 /* GameEntities */,
 			);
 			path = Tetris;
 			sourceTree = "<group>";
@@ -97,9 +107,7 @@
 		D09FC87B2B150D3B00ACF5FB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D09FC8742B150D3B00ACF5FB /* Brick.swift */,
 				D09FC8752B150D3B00ACF5FB /* Direction.swift */,
-				D09FC8762B150D3B00ACF5FB /* Field.swift */,
 				D09FC8772B150D3B00ACF5FB /* CellModel.swift */,
 				D09FC8782B150D3B00ACF5FB /* Point.swift */,
 				D09FC87A2B150D3B00ACF5FB /* Dimensions.swift */,
@@ -212,14 +220,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D09FC87E2B150D3B00ACF5FB /* Tetris.swift in Sources */,
-				D09FC8812B150DAA00ACF5FB /* Brick.swift in Sources */,
 				D09FC87F2B150D3B00ACF5FB /* TetrisDIPart.swift in Sources */,
 				D09FC8822B150DAE00ACF5FB /* Direction.swift in Sources */,
 				D09FC8862B150DE400ACF5FB /* Point.swift in Sources */,
 				D09FC8842B150DDE00ACF5FB /* Dimensions.swift in Sources */,
-				D09FC8802B150DA600ACF5FB /* Field.swift in Sources */,
 				D09FC8832B150DC600ACF5FB /* CellModel.swift in Sources */,
 				BB887ABD68E3B37226E378CD /* BrickFactory.swift in Sources */,
+				BB8878377A225466E776F9EF /* Brick.swift in Sources */,
+				BB88709EEA7DE0603E99118F /* Field.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
