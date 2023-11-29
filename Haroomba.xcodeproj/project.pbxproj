@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		114E35FF99406B8A24826A0A /* Pods_Haroomba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 746A4458EEA6899328C53E24 /* Pods_Haroomba.framework */; };
+		BB8874B3F78D8F05B888094B /* HaroombaAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887CD33602FF7307AF1BAC /* HaroombaAssembler.swift */; };
 		D034CF8A2B162A26005DBB7B /* TestUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D034CF892B162A26005DBB7B /* TestUI.framework */; };
 		D034CF8B2B162A26005DBB7B /* TestUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D034CF892B162A26005DBB7B /* TestUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D034CF8D2B162A2A005DBB7B /* Tetris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09FC8882B150E6800ACF5FB /* Tetris.framework */; };
@@ -15,7 +17,6 @@
 		D0E6EFF72B0CBA03000D8048 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E6EFF62B0CBA03000D8048 /* SceneDelegate.swift */; };
 		D0E6EFFE2B0CBA04000D8048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E6EFFD2B0CBA04000D8048 /* Assets.xcassets */; };
 		D0E6F0012B0CBA04000D8048 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0E6EFFF2B0CBA04000D8048 /* LaunchScreen.storyboard */; };
-		EFCB54A8E31AB194F61EF675 /* Pods_Haroomba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8754419D68807F53444BD8 /* Pods_Haroomba.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,9 +35,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3CA27247391C8EFE35DA91A5 /* Pods-Haroomba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Haroomba.release.xcconfig"; path = "Target Support Files/Pods-Haroomba/Pods-Haroomba.release.xcconfig"; sourceTree = "<group>"; };
-		7B8754419D68807F53444BD8 /* Pods_Haroomba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Haroomba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		816360DDFCE5D358EF9798B2 /* Pods-Haroomba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Haroomba.debug.xcconfig"; path = "Target Support Files/Pods-Haroomba/Pods-Haroomba.debug.xcconfig"; sourceTree = "<group>"; };
+		022129DFCB39FD1279497F90 /* Pods-Haroomba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Haroomba.release.xcconfig"; path = "Target Support Files/Pods-Haroomba/Pods-Haroomba.release.xcconfig"; sourceTree = "<group>"; };
+		746A4458EEA6899328C53E24 /* Pods_Haroomba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Haroomba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CD4F5F7ECA9516832897038 /* Pods-Haroomba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Haroomba.debug.xcconfig"; path = "Target Support Files/Pods-Haroomba/Pods-Haroomba.debug.xcconfig"; sourceTree = "<group>"; };
+		BB887CD33602FF7307AF1BAC /* HaroombaAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaroombaAssembler.swift; sourceTree = "<group>"; };
 		D034CF892B162A26005DBB7B /* TestUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TestUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09FC8882B150E6800ACF5FB /* Tetris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Tetris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E6EFF12B0CBA03000D8048 /* Haroomba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Haroomba.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,20 +56,19 @@
 			files = (
 				D034CF8A2B162A26005DBB7B /* TestUI.framework in Frameworks */,
 				D034CF8D2B162A2A005DBB7B /* Tetris.framework in Frameworks */,
-				EFCB54A8E31AB194F61EF675 /* Pods_Haroomba.framework in Frameworks */,
+				114E35FF99406B8A24826A0A /* Pods_Haroomba.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E8C0546F4D71107BC361C7D /* Pods */ = {
+		A3DBE1383795A57788C3B2A0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				816360DDFCE5D358EF9798B2 /* Pods-Haroomba.debug.xcconfig */,
-				3CA27247391C8EFE35DA91A5 /* Pods-Haroomba.release.xcconfig */,
+				8CD4F5F7ECA9516832897038 /* Pods-Haroomba.debug.xcconfig */,
+				022129DFCB39FD1279497F90 /* Pods-Haroomba.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -76,7 +77,7 @@
 			children = (
 				D034CF892B162A26005DBB7B /* TestUI.framework */,
 				D09FC8882B150E6800ACF5FB /* Tetris.framework */,
-				7B8754419D68807F53444BD8 /* Pods_Haroomba.framework */,
+				746A4458EEA6899328C53E24 /* Pods_Haroomba.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -87,7 +88,7 @@
 				D0E6EFF32B0CBA03000D8048 /* Haroomba */,
 				D0E6EFF22B0CBA03000D8048 /* Products */,
 				D09FC8872B150E6800ACF5FB /* Frameworks */,
-				0E8C0546F4D71107BC361C7D /* Pods */,
+				A3DBE1383795A57788C3B2A0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +108,7 @@
 				D0E6EFFD2B0CBA04000D8048 /* Assets.xcassets */,
 				D0E6EFFF2B0CBA04000D8048 /* LaunchScreen.storyboard */,
 				D0E6F0022B0CBA04000D8048 /* Info.plist */,
+				BB887CD33602FF7307AF1BAC /* HaroombaAssembler.swift */,
 			);
 			path = Haroomba;
 			sourceTree = "<group>";
@@ -118,11 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0E6F0052B0CBA04000D8048 /* Build configuration list for PBXNativeTarget "Haroomba" */;
 			buildPhases = (
-				CA2E6AD2C272A506E0A9C808 /* [CP] Check Pods Manifest.lock */,
+				26A87E71BD79C5E72D71D25B /* [CP] Check Pods Manifest.lock */,
 				D0E6EFED2B0CBA03000D8048 /* Sources */,
 				D0E6EFEE2B0CBA03000D8048 /* Frameworks */,
 				D0E6EFEF2B0CBA03000D8048 /* Resources */,
 				D034CF8C2B162A26005DBB7B /* Embed Frameworks */,
+				8938B887271697D2E0107AAA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,7 +182,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CA2E6AD2C272A506E0A9C808 /* [CP] Check Pods Manifest.lock */ = {
+		26A87E71BD79C5E72D71D25B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -201,6 +204,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8938B887271697D2E0107AAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Haroomba/Pods-Haroomba-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Haroomba/Pods-Haroomba-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Haroomba/Pods-Haroomba-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -210,6 +230,7 @@
 			files = (
 				D0E6EFF52B0CBA03000D8048 /* AppDelegate.swift in Sources */,
 				D0E6EFF72B0CBA03000D8048 /* SceneDelegate.swift in Sources */,
+				BB8874B3F78D8F05B888094B /* HaroombaAssembler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,13 +369,14 @@
 		};
 		D0E6F0062B0CBA04000D8048 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 816360DDFCE5D358EF9798B2 /* Pods-Haroomba.debug.xcconfig */;
+			baseConfigurationReference = 8CD4F5F7ECA9516832897038 /* Pods-Haroomba.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9AH5N8BQYS;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Haroomba/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -377,13 +399,14 @@
 		};
 		D0E6F0072B0CBA04000D8048 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CA27247391C8EFE35DA91A5 /* Pods-Haroomba.release.xcconfig */;
+			baseConfigurationReference = 022129DFCB39FD1279497F90 /* Pods-Haroomba.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9AH5N8BQYS;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Haroomba/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

@@ -1,28 +1,34 @@
 //
 //  Field.swift
-//  DromAuto
+//  Haroomba
 // 
 //  Created by Igor Djachenko on 21.11.2023.
 //
 
 import Foundation
 
-public class Field {
+public final class Field {
     public private(set) var cells: [[CellModel?]] = []
 
-    let width: Int
-    let height: Int
+    var width: Int {
+        dimensions.width
+    }
 
-    init(dimensions: Dimensions) {
-        width = dimensions.width
-        height = dimensions.height
+    var height: Int {
+        dimensions.height
+    }
+
+    private(set) var dimensions: Dimensions = .zero
+
+    init(dimensions: Dimensions = .zero) {
+        self.dimensions = dimensions
 
         (0..<height).forEach { _ in
             addEmptyRow()
         }
     }
 
-    func addEmptyRow() {
+    private func addEmptyRow() {
         guard cells.count < height else {
             return
         }
@@ -32,7 +38,7 @@ public class Field {
         cells.insert(newRow, at: 0)
     }
 
-    func removeRow(at index: Int) {
+    private func removeRow(at index: Int) {
         cells.remove(at: index)
     }
 

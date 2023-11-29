@@ -1,6 +1,6 @@
 //
 //  Point.swift
-//  DromAuto
+//  Haroomba
 // 
 //  Created by Igor Djachenko on 22.11.2023.
 //

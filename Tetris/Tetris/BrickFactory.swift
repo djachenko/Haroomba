@@ -1,14 +1,14 @@
 //
 //  BrickFactory.swift
-//  DromAuto
+//  Haroomba
 // 
 //  Created by Igor Djachenko on 22.11.2023.
 //
 
 import Foundation
 
-class BrickFactory {
-    static let I = Brick(
+final class BrickFactory {
+    private static let I = Brick(
         points: [
             Point(x: 0, y: 0),
             Point(x: 1, y: 0),
@@ -18,7 +18,7 @@ class BrickFactory {
         center: CGPoint(x: 1.5, y: 0.5)
     )
 
-    static let J = Brick(
+    private static let J = Brick(
         points: [
             Point(x: 0, y: 0),
             Point(x: 0, y: 1),
@@ -28,7 +28,7 @@ class BrickFactory {
         center: CGPoint(x: 1, y: 1)
     )
 
-    static let L = Brick(
+    private static let L = Brick(
         points: [
             Point(x: 0, y: 1),
             Point(x: 1, y: 1),
@@ -38,7 +38,7 @@ class BrickFactory {
         center: CGPoint(x: 1, y: 1)
     )
 
-    static let O = Brick(
+    private static let O = Brick(
         points: [
             Point(x: 0, y: 0),
             Point(x: 1, y: 0),
@@ -48,7 +48,7 @@ class BrickFactory {
         center: CGPoint(x: 0.5, y: 0.5)
     )
 
-    static let S = Brick(
+    private static let S = Brick(
         points: [
             Point(x: 0, y: 1),
             Point(x: 1, y: 1),
@@ -58,7 +58,7 @@ class BrickFactory {
         center: CGPoint(x: 1, y: 1)
     )
 
-    static let T = Brick(
+    private static let T = Brick(
         points: [
             Point(x: 0, y: 1),
             Point(x: 1, y: 1),
@@ -68,7 +68,7 @@ class BrickFactory {
         center: CGPoint(x: 1, y: 1)
     )
 
-    static let Z = Brick(
+    private static let Z = Brick(
         points: [
             Point(x: 0, y: 0),
             Point(x: 1, y: 0),
@@ -78,7 +78,7 @@ class BrickFactory {
         center: CGPoint(x: 1, y: 1)
     )
 
-    static let prototypes = [
+    private static let prototypes = [
         I, J, L, O, S, T, Z
     ]
 

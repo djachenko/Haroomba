@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0D82C48AC79FD64FC237DC59 /* libPods-TestUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36DB382E03E2F391F6D6C833 /* libPods-TestUI.a */; };
-		D034CF812B1629D4005DBB7B /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034CF772B1629D4005DBB7B /* FieldView.swift */; };
-		D034CF822B1629D4005DBB7B /* BrickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034CF782B1629D4005DBB7B /* BrickView.swift */; };
+		BB8871D71C9183C8A41913D7 /* BrickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8875F93F8F0FF4C9AAA194 /* BrickView.swift */; };
+		BB887771D6CD38E2776BF590 /* TestUIDIPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887F74377B3B1E6D855DDB /* TestUIDIPart.swift */; };
+		BB887832EE9E3BB0B5197BB6 /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8878807507E89658D17C86 /* FieldView.swift */; };
+		BB887AD1E7CDA3837DCE23CC /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB88750EC4F336E00E60D3C4 /* CellView.swift */; };
 		D034CF832B1629D4005DBB7B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034CF792B1629D4005DBB7B /* UIView+Extension.swift */; };
-		D034CF842B1629D4005DBB7B /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034CF7B2B1629D4005DBB7B /* CellView.swift */; };
 		D034CF862B1629D4005DBB7B /* GamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034CF7E2B1629D4005DBB7B /* GamePresenter.swift */; };
 		D034CF872B1629D4005DBB7B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034CF7F2B1629D4005DBB7B /* GameViewController.swift */; };
 		D034CF882B1629D4005DBB7B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034CF802B1629D4005DBB7B /* Extensions.swift */; };
@@ -39,11 +40,12 @@
 		2C730611AC042943C5A50A4A /* Pods-TestUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUI.release.xcconfig"; path = "Target Support Files/Pods-TestUI/Pods-TestUI.release.xcconfig"; sourceTree = "<group>"; };
 		36DB382E03E2F391F6D6C833 /* libPods-TestUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0B7EE593D8A174F8B4DB2E /* Pods-TestUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUI.debug.xcconfig"; path = "Target Support Files/Pods-TestUI/Pods-TestUI.debug.xcconfig"; sourceTree = "<group>"; };
+		BB88750EC4F336E00E60D3C4 /* CellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		BB8875F93F8F0FF4C9AAA194 /* BrickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrickView.swift; sourceTree = "<group>"; };
+		BB8878807507E89658D17C86 /* FieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
+		BB887F74377B3B1E6D855DDB /* TestUIDIPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestUIDIPart.swift; sourceTree = "<group>"; };
 		D034CF6C2B162991005DBB7B /* TestUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D034CF772B1629D4005DBB7B /* FieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
-		D034CF782B1629D4005DBB7B /* BrickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrickView.swift; sourceTree = "<group>"; };
 		D034CF792B1629D4005DBB7B /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		D034CF7B2B1629D4005DBB7B /* CellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		D034CF7E2B1629D4005DBB7B /* GamePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePresenter.swift; sourceTree = "<group>"; };
 		D034CF7F2B1629D4005DBB7B /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		D034CF802B1629D4005DBB7B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -65,6 +67,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB8874B9ED26689CFDBEA529 /* EntitiesViews */ = {
+			isa = PBXGroup;
+			children = (
+				BB8878807507E89658D17C86 /* FieldView.swift */,
+				BB8875F93F8F0FF4C9AAA194 /* BrickView.swift */,
+				BB88753C44635BBFA00C186F /* CellView */,
+			);
+			path = EntitiesViews;
+			sourceTree = "<group>";
+		};
+		BB88753C44635BBFA00C186F /* CellView */ = {
+			isa = PBXGroup;
+			children = (
+				BB88750EC4F336E00E60D3C4 /* CellView.swift */,
+			);
+			path = CellView;
+			sourceTree = "<group>";
+		};
 		D034CF622B162991005DBB7B = {
 			isa = PBXGroup;
 			children = (
@@ -86,41 +106,24 @@
 		D034CF6E2B162991005DBB7B /* TestUI */ = {
 			isa = PBXGroup;
 			children = (
-				D034CF7A2B1629D4005DBB7B /* CellView */,
 				D034CF802B1629D4005DBB7B /* Extensions.swift */,
-				D034CF7C2B1629D4005DBB7B /* GameView */,
-				D034CF762B1629D4005DBB7B /* FieldView */,
+				D034CF7C2B1629D4005DBB7B /* GameScreen */,
 				D034CF792B1629D4005DBB7B /* UIView+Extension.swift */,
 				D034CF962B1630FB005DBB7B /* TestUIAssembly.swift */,
+				BB887F74377B3B1E6D855DDB /* TestUIDIPart.swift */,
 			);
 			path = TestUI;
 			sourceTree = "<group>";
 		};
-		D034CF762B1629D4005DBB7B /* FieldView */ = {
-			isa = PBXGroup;
-			children = (
-				D034CF772B1629D4005DBB7B /* FieldView.swift */,
-				D034CF782B1629D4005DBB7B /* BrickView.swift */,
-			);
-			path = FieldView;
-			sourceTree = "<group>";
-		};
-		D034CF7A2B1629D4005DBB7B /* CellView */ = {
-			isa = PBXGroup;
-			children = (
-				D034CF7B2B1629D4005DBB7B /* CellView.swift */,
-			);
-			path = CellView;
-			sourceTree = "<group>";
-		};
-		D034CF7C2B1629D4005DBB7B /* GameView */ = {
+		D034CF7C2B1629D4005DBB7B /* GameScreen */ = {
 			isa = PBXGroup;
 			children = (
 				D034CF902B162E37005DBB7B /* GameViewController.xib */,
 				D034CF7E2B1629D4005DBB7B /* GamePresenter.swift */,
 				D034CF7F2B1629D4005DBB7B /* GameViewController.swift */,
+				BB8874B9ED26689CFDBEA529 /* EntitiesViews */,
 			);
-			path = GameView;
+			path = GameScreen;
 			sourceTree = "<group>";
 		};
 		D034CF982B163159005DBB7B /* Frameworks */ = {
@@ -249,14 +252,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D034CF842B1629D4005DBB7B /* CellView.swift in Sources */,
 				D034CF972B1630FB005DBB7B /* TestUIAssembly.swift in Sources */,
 				D034CF832B1629D4005DBB7B /* UIView+Extension.swift in Sources */,
-				D034CF822B1629D4005DBB7B /* BrickView.swift in Sources */,
 				D034CF862B1629D4005DBB7B /* GamePresenter.swift in Sources */,
 				D034CF872B1629D4005DBB7B /* GameViewController.swift in Sources */,
-				D034CF812B1629D4005DBB7B /* FieldView.swift in Sources */,
 				D034CF882B1629D4005DBB7B /* Extensions.swift in Sources */,
+				BB887771D6CD38E2776BF590 /* TestUIDIPart.swift in Sources */,
+				BB887832EE9E3BB0B5197BB6 /* FieldView.swift in Sources */,
+				BB8871D71C9183C8A41913D7 /* BrickView.swift in Sources */,
+				BB887AD1E7CDA3837DCE23CC /* CellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

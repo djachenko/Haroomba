@@ -18,12 +18,12 @@ public class GameViewController: UIViewController {
     @IBOutlet private var brick: BrickView!
 
     var presenter: Any!
-    public var output: GamePresenterInput?
+    var output: GamePresenterInput?
 
     public func set(presenter: GamePresenter) {
         self.presenter = presenter
 
-        presenter.view = self
+//        presenter.view = self
     }
 
     public override func viewDidLoad() {

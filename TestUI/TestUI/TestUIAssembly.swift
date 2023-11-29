@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import Tetris
+import DITranquillity
 
 public class TestUIAssembly {
     public static let instance = TestUIAssembly()
@@ -19,12 +20,18 @@ public class TestUIAssembly {
         viewController.set(presenter: presenter)
         viewController.output = presenter
 
-        let tetris = GameAssembly.instance.game()
+        let container = DIContainer()
 
-        tetris.cycle = tetris
-        tetris.output = presenter
+        container.append(part: TetrisDIPart.self)
 
-        presenter.output = tetris
+        var args = AnyArguments()
+        args.addArgs(for: Field.self, args: Dimensions(width: 9, height: 13))
+
+        let tetris: TetrisInput = container.resolve(arguments: args)
+
+        tetris.set(output: presenter)
+
+        presenter.tetrisInput = tetris
         
         return viewController
     }

@@ -11,6 +11,8 @@ end
 target 'Haroomba' do
   use_frameworks!
 
+  project 'Haroomba.xcodeproj'
+  shared_pods
   # Pods for Haroomba
 
 end

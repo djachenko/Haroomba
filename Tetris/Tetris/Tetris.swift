@@ -1,6 +1,6 @@
 //
 //  Tetris.swift
-//  DromAuto
+//  Haroomba
 // 
 //  Created by Igor Djachenko on 21.11.2023.
 //
@@ -18,12 +18,14 @@ public protocol TetrisOutput: AnyObject {
 }
 
 public protocol TetrisInput {
+    func set(output: TetrisOutput)
+
     func start()
     func move(direction: Direction)
     func rotate()
 }
 
-public class Tetris {
+final class Tetris {
     private var currentBrick: Brick! // todo: multiple
     private var field: Field
 
@@ -32,13 +34,11 @@ public class Tetris {
 
     private var points: Int = 0
 
-    public var cycle: Any?
-    public weak var output: TetrisOutput?
+    weak var output: TetrisOutput?
 
-    init(brickFactory: BrickFactory, fieldDimensions: Dimensions) {
+    init(brickFactory: BrickFactory, field: Field) {
         factory = brickFactory
-
-        field = Field(dimensions: fieldDimensions)
+        self.field = field
     }
 
     func runLoop() {
@@ -59,11 +59,12 @@ public class Tetris {
         let fullRows = field.checkRows()
 
         if !fullRows.isEmpty {
-            points += 2.pow(exp: fullRows.count - 1)
 
             fullRows.forEach { i in
                 field.drop(row: i)
             }
+
+            points += 2.pow(exp: fullRows.count - 1)
 
             output?.didUpdate(field: field)
         }
@@ -84,16 +85,17 @@ public class Tetris {
 }
 
 extension Tetris: TetrisInput {
+    public func set(output: TetrisOutput) {
+        self.output = output
+    }
+
     public func start() {
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
             self.runLoop()
         }
 
         output?.didUpdate(parameters: TetrisParameters(
-            fieldDimensions: Dimensions(
-                width: field.width,
-                height: field.height
-            )
+            fieldDimensions: field.dimensions
         ))
 
         points = 0
