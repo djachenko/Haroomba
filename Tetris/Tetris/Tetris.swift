@@ -121,9 +121,3 @@ extension Tetris: TetrisInput {
         update(nextBrick: currentBrick.rotated())
     }
 }
-
-extension Int {
-    func pow(exp: Int) -> Int {
-        Int(Darwin.pow(Double(self), Double(exp)))
-    }
-}

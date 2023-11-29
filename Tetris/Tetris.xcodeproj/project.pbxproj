@@ -10,6 +10,7 @@
 		BB88709EEA7DE0603E99118F /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8874AF44F577228EBBFFDE /* Field.swift */; };
 		BB8878377A225466E776F9EF /* Brick.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887454AAB065883DB3E7BC /* Brick.swift */; };
 		BB887ABD68E3B37226E378CD /* BrickFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887DF31A35AD6E392A0B94 /* BrickFactory.swift */; };
+		BB887B47C22D05490D324F8A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887E03B12A90FE0E0F907D /* Extensions.swift */; };
 		CF76A05879F5C38967D34219 /* libPods-Tetris.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F74441AA2C28B69212C5BFD /* libPods-Tetris.a */; };
 		D09FC87E2B150D3B00ACF5FB /* Tetris.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09FC87C2B150D3B00ACF5FB /* Tetris.swift */; };
 		D09FC87F2B150D3B00ACF5FB /* TetrisDIPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09FC87D2B150D3B00ACF5FB /* TetrisDIPart.swift */; };
@@ -26,6 +27,7 @@
 		BB887454AAB065883DB3E7BC /* Brick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brick.swift; sourceTree = "<group>"; };
 		BB8874AF44F577228EBBFFDE /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
 		BB887DF31A35AD6E392A0B94 /* BrickFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrickFactory.swift; sourceTree = "<group>"; };
+		BB887E03B12A90FE0E0F907D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D09FC86A2B150D2B00ACF5FB /* Tetris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tetris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09FC8752B150D3B00ACF5FB /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		D09FC8772B150D3B00ACF5FB /* CellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				D09FC87D2B150D3B00ACF5FB /* TetrisDIPart.swift */,
 				BB887DF31A35AD6E392A0B94 /* BrickFactory.swift */,
 				BB887513BF4A1AC0DC6D6782 /* GameEntities */,
+				BB887E03B12A90FE0E0F907D /* Extensions.swift */,
 			);
 			path = Tetris;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				BB887ABD68E3B37226E378CD /* BrickFactory.swift in Sources */,
 				BB8878377A225466E776F9EF /* Brick.swift in Sources */,
 				BB88709EEA7DE0603E99118F /* Field.swift in Sources */,
+				BB887B47C22D05490D324F8A /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
