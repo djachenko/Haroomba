@@ -1,6 +1,6 @@
 //
 //  Extensions.swift
-//  DromAuto
+//  Haroomba
 // 
 //  Created by Igor Djachenko on 22.11.2023.
 //
@@ -54,7 +54,7 @@ public extension UIViewController {
         return T.init(nibName: String(describing: self), bundle: Bundle(for: self))
     }
 
-    public static func instance() -> Self {
+    static func instance() -> Self {
         return genericInstance()
     }
 }

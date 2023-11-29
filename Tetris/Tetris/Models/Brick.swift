@@ -1,13 +1,13 @@
 //
 //  Brick.swift
-//  DromAuto
+//  Haroomba
 // 
 //  Created by Igor Djachenko on 21.11.2023.
 //
 
 import Foundation
 
-public class Brick {
+public final class Brick {
     public internal(set) var origin: Point
     public let points: [Point]
     public let center: CGPoint

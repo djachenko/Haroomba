@@ -1,6 +1,6 @@
 //
-//  FieldPresenter.swift
-//  DromAuto
+//  GamePresenter.swift
+//  Haroomba
 // 
 //  Created by Igor Djachenko on 21.11.2023.
 //
@@ -26,11 +26,18 @@ public protocol GamePresenterInput {
 public class GamePresenter {
     weak var view: GameViewProtocol?
 
-    public var output: TetrisInput?
+    public var tetrisInput: TetrisInput?
+//    {
+//        didSet {
+//            tetrisInput?.set(output: self)
+//        }
+//    }
 
     private var tetrisParameters: TetrisParameters!
-    
-    public init() {}
+
+    init() {
+        print("gp init")
+    }
 }
 
 extension GamePresenter: TetrisOutput {
@@ -91,18 +98,18 @@ extension GamePresenter: TetrisOutput {
 
 extension GamePresenter: GamePresenterInput {
     public func viewDidLoad() {
-        output?.start()
+        tetrisInput?.start()
     }
 
     public func didTapLeftButton() {
-        output?.move(direction: .left)
+        tetrisInput?.move(direction: .left)
     }
 
     public func didTapRightButton() {
-        output?.move(direction: .right)
+        tetrisInput?.move(direction: .right)
     }
 
     public func didTapRotateButton() {
-        output?.rotate()
+        tetrisInput?.rotate()
     }
 }

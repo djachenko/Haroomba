@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BB887ABD68E3B37226E378CD /* BrickFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887DF31A35AD6E392A0B94 /* BrickFactory.swift */; };
+		CF76A05879F5C38967D34219 /* libPods-Tetris.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F74441AA2C28B69212C5BFD /* libPods-Tetris.a */; };
 		D09FC87E2B150D3B00ACF5FB /* Tetris.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09FC87C2B150D3B00ACF5FB /* Tetris.swift */; };
-		D09FC87F2B150D3B00ACF5FB /* GameAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09FC87D2B150D3B00ACF5FB /* GameAssembly.swift */; };
+		D09FC87F2B150D3B00ACF5FB /* TetrisDIPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09FC87D2B150D3B00ACF5FB /* TetrisDIPart.swift */; };
 		D09FC8802B150DA600ACF5FB /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09FC8762B150D3B00ACF5FB /* Field.swift */; };
 		D09FC8812B150DAA00ACF5FB /* Brick.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09FC8742B150D3B00ACF5FB /* Brick.swift */; };
 		D09FC8822B150DAE00ACF5FB /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09FC8752B150D3B00ACF5FB /* Direction.swift */; };
@@ -19,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F74441AA2C28B69212C5BFD /* libPods-Tetris.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tetris.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73F713256BEB1E58D7CC9190 /* Pods-Tetris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tetris.debug.xcconfig"; path = "Target Support Files/Pods-Tetris/Pods-Tetris.debug.xcconfig"; sourceTree = "<group>"; };
+		9D86970F16BBEBB0B9D74BB3 /* Pods-Tetris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tetris.release.xcconfig"; path = "Target Support Files/Pods-Tetris/Pods-Tetris.release.xcconfig"; sourceTree = "<group>"; };
 		BB887DF31A35AD6E392A0B94 /* BrickFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrickFactory.swift; sourceTree = "<group>"; };
 		D09FC86A2B150D2B00ACF5FB /* Tetris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tetris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09FC8742B150D3B00ACF5FB /* Brick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brick.swift; sourceTree = "<group>"; };
@@ -28,7 +32,7 @@
 		D09FC8782B150D3B00ACF5FB /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		D09FC87A2B150D3B00ACF5FB /* Dimensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dimensions.swift; sourceTree = "<group>"; };
 		D09FC87C2B150D3B00ACF5FB /* Tetris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tetris.swift; sourceTree = "<group>"; };
-		D09FC87D2B150D3B00ACF5FB /* GameAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameAssembly.swift; sourceTree = "<group>"; };
+		D09FC87D2B150D3B00ACF5FB /* TetrisDIPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TetrisDIPart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF76A05879F5C38967D34219 /* libPods-Tetris.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A98C767FE470B34E9117404C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F74441AA2C28B69212C5BFD /* libPods-Tetris.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF960CB82A44DA543B955856 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73F713256BEB1E58D7CC9190 /* Pods-Tetris.debug.xcconfig */,
+				9D86970F16BBEBB0B9D74BB3 /* Pods-Tetris.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		D09FC8602B150D2B00ACF5FB = {
 			isa = PBXGroup;
 			children = (
 				D09FC86C2B150D2B00ACF5FB /* Tetris */,
 				D09FC86B2B150D2B00ACF5FB /* Products */,
+				CF960CB82A44DA543B955856 /* Pods */,
+				A98C767FE470B34E9117404C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,7 +88,7 @@
 			children = (
 				D09FC87B2B150D3B00ACF5FB /* Models */,
 				D09FC87C2B150D3B00ACF5FB /* Tetris.swift */,
-				D09FC87D2B150D3B00ACF5FB /* GameAssembly.swift */,
+				D09FC87D2B150D3B00ACF5FB /* TetrisDIPart.swift */,
 				BB887DF31A35AD6E392A0B94 /* BrickFactory.swift */,
 			);
 			path = Tetris;
@@ -99,6 +124,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D09FC8712B150D2B00ACF5FB /* Build configuration list for PBXNativeTarget "Tetris" */;
 			buildPhases = (
+				6FEB551E30EB945EAA75B760 /* [CP] Check Pods Manifest.lock */,
 				D09FC8652B150D2B00ACF5FB /* Headers */,
 				D09FC8662B150D2B00ACF5FB /* Sources */,
 				D09FC8672B150D2B00ACF5FB /* Frameworks */,
@@ -155,6 +181,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6FEB551E30EB945EAA75B760 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tetris-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D09FC8662B150D2B00ACF5FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -162,7 +213,7 @@
 			files = (
 				D09FC87E2B150D3B00ACF5FB /* Tetris.swift in Sources */,
 				D09FC8812B150DAA00ACF5FB /* Brick.swift in Sources */,
-				D09FC87F2B150D3B00ACF5FB /* GameAssembly.swift in Sources */,
+				D09FC87F2B150D3B00ACF5FB /* TetrisDIPart.swift in Sources */,
 				D09FC8822B150DAE00ACF5FB /* Direction.swift in Sources */,
 				D09FC8862B150DE400ACF5FB /* Point.swift in Sources */,
 				D09FC8842B150DDE00ACF5FB /* Dimensions.swift in Sources */,
@@ -302,6 +353,7 @@
 		};
 		D09FC8722B150D2B00ACF5FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73F713256BEB1E58D7CC9190 /* Pods-Tetris.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -333,6 +385,7 @@
 		};
 		D09FC8732B150D2B00ACF5FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D86970F16BBEBB0B9D74BB3 /* Pods-Tetris.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
