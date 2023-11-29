@@ -42,9 +42,9 @@ final class Tetris {
     }
 
     func runLoop() {
-        move(direction: .down)
-
-        if !field.validate(brick: currentBrick.moved(direction: .down)) {
+        if field.validate(brick: currentBrick.moved(direction: .down)) {
+            move(direction: .down)
+        } else {
             if currentBrick.origin.y < 0 {
                 stop()
             }
