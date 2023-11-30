@@ -16,6 +16,7 @@ public class GameViewController: UIViewController {
 
     @IBOutlet private var field: FieldView!
     @IBOutlet private var brick: BrickView!
+    @IBOutlet private var scoreLabel: UILabel!
 
     var presenter: Any!
     var output: GamePresenterInput?
@@ -58,6 +59,10 @@ extension GameViewController: GameViewProtocol {
 
     func didUpdate(brickViewModel: BrickViewModel) {
         brick.configure(viewModel: brickViewModel)
+    }
+
+    func didUpdate(scoreViewModel: ScoreViewModel) {
+        scoreLabel.text = String(scoreViewModel)
     }
 }
 

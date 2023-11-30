@@ -8,11 +8,14 @@
 import Tetris
 import CoreGraphics
 
+typealias ScoreViewModel = Int
+
 protocol GameViewProtocol: AnyObject {
     func set(fieldDimension: Dimensions)
 
     func didUpdate(fieldViewModel: FieldViewModel)
     func didUpdate(brickViewModel: BrickViewModel)
+    func didUpdate(scoreViewModel: ScoreViewModel)
 }
 
 public protocol GamePresenterInput {
@@ -27,11 +30,6 @@ public class GamePresenter {
     weak var view: GameViewProtocol?
 
     public var tetrisInput: TetrisInput?
-//    {
-//        didSet {
-//            tetrisInput?.set(output: self)
-//        }
-//    }
 
     private var tetrisParameters: TetrisParameters!
 
@@ -76,15 +74,13 @@ extension GamePresenter: TetrisOutput {
     }
 
     public func didUpdate(brick: Brick) {
+        let width = tetrisParameters.fieldDimensions.width
+
         let viewModel = BrickViewModel(
-            origin: CGPoint(
-                x: brick.origin.x,
-                y: brick.origin.y
-            ),
             cellViewModels: brick.points.map { point in
                 CellViewModel(
-                    x: CGFloat(point.x),
-                    y: CGFloat(point.y),
+                    x: CGFloat((point.x + brick.origin.x).wrapped(limit: width)),
+                    y: CGFloat(point.y + brick.origin.y),
                     color: .green
                 )
             }
@@ -92,6 +88,12 @@ extension GamePresenter: TetrisOutput {
 
         DispatchQueue.main.async { [weak self] in
             self?.view?.didUpdate(brickViewModel: viewModel)
+        }
+    }
+
+    public func didUpdate(score: Int) {
+        DispatchQueue.main.async { [weak self] in
+            self?.view?.didUpdate(scoreViewModel: score)
         }
     }
 }

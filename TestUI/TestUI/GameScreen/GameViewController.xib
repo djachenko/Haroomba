@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="brick" destination="RYS-Mx-Phj" id="6CH-GL-NG6"/>
                 <outlet property="field" destination="ntC-e6-U7d" id="vbl-Op-NrO"/>
+                <outlet property="scoreLabel" destination="jlL-7E-peH" id="Xv3-w1-4Zx"/>
                 <outlet property="view" destination="iN0-l3-epB" id="yta-7W-cyZ"/>
             </connections>
         </placeholder>
@@ -24,6 +25,12 @@
                     <rect key="frame" x="0.0" y="229.66666666666663" width="393" height="393"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlL-7E-peH">
+                    <rect key="frame" x="154.33333333333334" y="176.66666666666666" width="84.666666666666657" height="43"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ntC-e6-U7d" customClass="FieldView" customModule="TestUI" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="229.66666666666663" width="393" height="393"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -31,15 +38,8 @@
                         <constraint firstAttribute="width" secondItem="ntC-e6-U7d" secondAttribute="height" multiplier="1:1" placeholder="YES" id="Rq9-ml-UNu"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GkF-KS-0eO" userLabel="Brick Window">
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RYS-Mx-Phj" customClass="BrickView" customModule="TestUI" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="229.66666666666663" width="393" height="393"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RYS-Mx-Phj" customClass="BrickView" customModule="TestUI" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="-200" width="0.0" height="0.0"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </view>
-                    </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CRX-lR-QcR">
@@ -79,21 +79,23 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="GkF-KS-0eO" firstAttribute="top" secondItem="ntC-e6-U7d" secondAttribute="top" id="159-AW-csu"/>
                 <constraint firstItem="CRX-lR-QcR" firstAttribute="top" secondItem="2UE-Th-gbv" secondAttribute="bottom" constant="10" id="1PT-Nu-Yfz"/>
                 <constraint firstItem="ntC-e6-U7d" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Hoo-gB-JA2"/>
-                <constraint firstItem="GkF-KS-0eO" firstAttribute="trailing" secondItem="ntC-e6-U7d" secondAttribute="trailing" id="HtX-WM-9Nn"/>
                 <constraint firstItem="CRX-lR-QcR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IY4-vO-M61"/>
+                <constraint firstItem="ntC-e6-U7d" firstAttribute="top" secondItem="jlL-7E-peH" secondAttribute="bottom" constant="10" id="MXn-98-6j4"/>
                 <constraint firstItem="2UE-Th-gbv" firstAttribute="leading" secondItem="ntC-e6-U7d" secondAttribute="leading" id="O4l-IL-Bu8"/>
-                <constraint firstItem="GkF-KS-0eO" firstAttribute="leading" secondItem="ntC-e6-U7d" secondAttribute="leading" id="Rmr-sT-Cve"/>
                 <constraint firstItem="2UE-Th-gbv" firstAttribute="top" secondItem="ntC-e6-U7d" secondAttribute="top" id="SFl-tw-OFv"/>
                 <constraint firstItem="2UE-Th-gbv" firstAttribute="bottom" secondItem="ntC-e6-U7d" secondAttribute="bottom" id="Uha-ro-ctf"/>
+                <constraint firstItem="RYS-Mx-Phj" firstAttribute="trailing" secondItem="ntC-e6-U7d" secondAttribute="trailing" id="a8y-41-Y6X"/>
                 <constraint firstItem="ntC-e6-U7d" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="eU4-n6-4mr"/>
                 <constraint firstItem="2UE-Th-gbv" firstAttribute="trailing" secondItem="ntC-e6-U7d" secondAttribute="trailing" id="mrK-hI-Kgn"/>
+                <constraint firstItem="RYS-Mx-Phj" firstAttribute="top" secondItem="ntC-e6-U7d" secondAttribute="top" id="qK4-rw-NHG"/>
+                <constraint firstItem="jlL-7E-peH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sS0-vL-gRG"/>
                 <constraint firstItem="ntC-e6-U7d" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tJZ-C8-tZy"/>
-                <constraint firstItem="GkF-KS-0eO" firstAttribute="bottom" secondItem="ntC-e6-U7d" secondAttribute="bottom" id="zi9-xR-Lyq"/>
+                <constraint firstItem="RYS-Mx-Phj" firstAttribute="bottom" secondItem="ntC-e6-U7d" secondAttribute="bottom" id="tii-BP-YNH"/>
+                <constraint firstItem="RYS-Mx-Phj" firstAttribute="leading" secondItem="ntC-e6-U7d" secondAttribute="leading" id="uyU-24-fFX"/>
             </constraints>
-            <point key="canvasLocation" x="132" y="-12"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-12.67605633802817"/>
         </view>
     </objects>
     <resources>

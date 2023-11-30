@@ -15,6 +15,7 @@ public protocol TetrisOutput: AnyObject {
     func didUpdate(parameters: TetrisParameters)
     func didUpdate(field: Field)
     func didUpdate(brick: Brick)
+    func didUpdate(score: Int)
 }
 
 public protocol TetrisInput {
@@ -32,7 +33,7 @@ final class Tetris {
     private var timer: Timer!
     private var factory: BrickFactory
 
-    private var points: Int = 0
+    private var score: Int = 0
 
     weak var output: TetrisOutput?
 
@@ -64,12 +65,11 @@ final class Tetris {
                 field.drop(row: i)
             }
 
-            points += 2.pow(exp: fullRows.count - 1)
+            score += 2.pow(exp: fullRows.count - 1)
 
             output?.didUpdate(field: field)
+            output?.didUpdate(score: score)
         }
-
-        print(points)
     }
 
     private func getNewBrick() {
@@ -98,7 +98,9 @@ extension Tetris: TetrisInput {
             fieldDimensions: field.dimensions
         ))
 
-        points = 0
+        score = 0
+
+        output?.didUpdate(score: score)
 
         getNewBrick()
     }

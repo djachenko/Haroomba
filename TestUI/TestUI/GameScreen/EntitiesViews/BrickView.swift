@@ -8,7 +8,6 @@
 import UIKit
 
 struct BrickViewModel {
-    let origin: CGPoint
     let cellViewModels: [CellViewModel]
 }
 
@@ -54,12 +53,5 @@ class BrickView: UIView {
 
             cellView.configure(cellViewModel: cellViewModel)
         }
-
-        frame = CGRect(
-            x: viewModel.origin.x * cellSize,
-            y: viewModel.origin.y * cellSize,
-            width: subcells.map { $0.frame.origin.x + $0.frame.width }.max() ?? 0,
-            height: subcells.map { $0.frame.origin.y + $0.frame.height }.max() ?? 0
-        )
     }
 }

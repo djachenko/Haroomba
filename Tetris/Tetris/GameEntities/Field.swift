@@ -45,13 +45,12 @@ public final class Field {
     func drop(brick: Brick) {
         brick.points.forEach { point in
             let pointY = brick.origin.y + point.y
-            let pointX = brick.origin.x + point.x
+            let pointX = (brick.origin.x + point.x).wrapped(limit: width)
 
             guard (0..<width) ~= pointX,
                   (0..<height) ~= pointY else {
                 return
             }
-
 
             return cells[pointY][pointX] = CellModel()
         }
@@ -59,7 +58,7 @@ public final class Field {
 
     func validate(brick: Brick) -> Bool {
         brick.points.allSatisfy { point in
-            let newX = brick.origin.x + point.x
+            let newX = (brick.origin.x + point.x).wrapped(limit: width)
             let newY = brick.origin.y + point.y
 
             let canMoveX = (0..<width) ~= newX

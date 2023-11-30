@@ -58,3 +58,19 @@ public extension UIViewController {
         return genericInstance()
     }
 }
+
+extension Int {
+    func wrapped(limit: Int) -> Int {
+        var selfCopy = self
+
+        while !((0..<limit) ~= selfCopy) {
+            if selfCopy < 0 {
+                selfCopy += limit
+            } else {
+                selfCopy -= limit
+            }
+        }
+
+        return selfCopy
+    }
+}
