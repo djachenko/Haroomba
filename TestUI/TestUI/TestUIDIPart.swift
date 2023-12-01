@@ -10,11 +10,8 @@ import Tetris
 
 public final class TestUIDIPart: DIPart {
     public class func load(container: DIContainer) {
-        container.register {
-                print("tvc")
-                return GameViewController.instance()
-            }
-//            .as(UIViewController.self)
+        container.register { GameViewController.instance() }
+            .as(UIViewController.self)
             .as(GameViewProtocol.self)
             .injection { $0.output = $1 }
             .injection { $0.set(presenter: $1) }
@@ -26,6 +23,5 @@ public final class TestUIDIPart: DIPart {
             .injection { $0.tetrisInput = $1 }
             .injection(cycle: true) { $0.view = $1 }
             .lifetime(.objectGraph)
-
     }
 }

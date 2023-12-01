@@ -11,7 +11,7 @@ import Tetris
 import TestUI
 
 class HaroombaAssembler {
-    func assemble() -> GameViewController {
+    func assemble() -> UIViewController {
         let container = DIContainer()
 
         container.append(part: TetrisDIPart.self)

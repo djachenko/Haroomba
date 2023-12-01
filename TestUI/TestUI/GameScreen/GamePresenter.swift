@@ -34,10 +34,6 @@ public class GamePresenter {
     public var tetrisInput: TetrisInput?
 
     private var tetrisParameters: TetrisParameters!
-
-    init() {
-        print("gp init")
-    }
 }
 
 extension GamePresenter: TetrisOutput {

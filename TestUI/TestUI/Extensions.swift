@@ -33,14 +33,14 @@ extension UIView {
     }
 
     static func fromXib() -> Self? {
-        return fromXib(name: String(describing: self)) as? Self
+        fromXib(name: String(describing: self)) as? Self
     }
 
     static func fromXib(name: String) -> UIView? {
         let loaded = Bundle.main.loadNibNamed(name, owner: nil)!
 
         let viewArray = loaded.filter({item in
-            return item is UIView
+            item is UIView
         }) as! [UIView]
 
         return viewArray.first
@@ -51,11 +51,11 @@ public extension UIViewController {
 
     //** loads instance from right framework bundle, not main bundle as UIViewController.init() does
     private static func genericInstance<T: UIViewController>() -> T {
-        return T.init(nibName: String(describing: self), bundle: Bundle(for: self))
+        T.init(nibName: String(describing: self), bundle: Bundle(for: self))
     }
 
     static func instance() -> Self {
-        return genericInstance()
+        genericInstance()
     }
 }
 
