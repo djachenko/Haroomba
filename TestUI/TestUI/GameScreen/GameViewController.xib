@@ -43,10 +43,18 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CRX-lR-QcR">
-                    <rect key="frame" x="46.666666666666657" y="632.66666666666663" width="300" height="100"/>
+                    <rect key="frame" x="24" y="632.66666666666663" width="345" height="69"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cpd-jC-fmd">
-                            <rect key="frame" x="0.0" y="0.0" width="93.333333333333329" height="100"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ntm-10-pHC">
+                            <rect key="frame" x="0.0" y="0.0" width="61" height="69"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="D"/>
+                            <connections>
+                                <action selector="didTapDropButton" destination="-1" eventType="touchUpInside" id="Hnd-dF-jf5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cpd-jC-fmd">
+                            <rect key="frame" x="71" y="0.0" width="61" height="69"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="L"/>
                             <connections>
@@ -54,7 +62,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVU-MB-yIZ">
-                            <rect key="frame" x="103.33333333333334" y="0.0" width="93.333333333333343" height="100"/>
+                            <rect key="frame" x="142" y="0.0" width="61" height="69"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="O"/>
                             <connections>
@@ -62,17 +70,25 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPV-S7-Agy">
-                            <rect key="frame" x="206.66666666666669" y="0.0" width="93.333333333333314" height="100"/>
+                            <rect key="frame" x="213" y="0.0" width="61" height="69"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="R"/>
                             <connections>
                                 <action selector="didTapRightButton" destination="-1" eventType="touchUpInside" id="RLh-ru-q83"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FR0-ZS-sSx">
+                            <rect key="frame" x="284" y="0.0" width="61" height="69"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="P"/>
+                            <connections>
+                                <action selector="didTapPauseButton" destination="-1" eventType="touchUpInside" id="6b7-E7-ofj"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="CRX-lR-QcR" secondAttribute="height" multiplier="3:1" id="GUL-yD-cNn"/>
-                        <constraint firstAttribute="height" constant="100" id="HWA-Th-r2s"/>
+                        <constraint firstAttribute="width" secondItem="CRX-lR-QcR" secondAttribute="height" multiplier="5:1" id="GUL-yD-cNn"/>
+                        <constraint firstAttribute="height" constant="69" id="HWA-Th-r2s"/>
                     </constraints>
                 </stackView>
             </subviews>

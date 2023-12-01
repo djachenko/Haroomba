@@ -24,6 +24,8 @@ public protocol GamePresenterInput {
     func didTapLeftButton()
     func didTapRightButton()
     func didTapRotateButton()
+    func didTapDropButton()
+    func didTapPauseButton()
 }
 
 public class GamePresenter {
@@ -113,5 +115,13 @@ extension GamePresenter: GamePresenterInput {
 
     public func didTapRotateButton() {
         tetrisInput?.rotate()
+    }
+
+    public func didTapDropButton() {
+        tetrisInput?.drop()
+    }
+
+    public func didTapPauseButton() {
+        tetrisInput?.playPause()
     }
 }

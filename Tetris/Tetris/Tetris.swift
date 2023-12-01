@@ -24,13 +24,22 @@ public protocol TetrisInput {
     func start()
     func move(direction: Direction)
     func rotate()
+    func drop()
+    func playPause()
 }
 
 final class Tetris {
+    private enum State {
+        case stopped
+        case paused
+        case playing
+    }
+
     private var currentBrick: Brick! // todo: multiple
     private var field: Field
 
-    private var timer: Timer!
+    private var timer: Timer?
+    private var state: State = .stopped
     private var factory: BrickFactory
 
     private var score: Int = 0
@@ -47,7 +56,7 @@ final class Tetris {
             move(direction: .down)
         } else {
             if currentBrick.origin.y < 0 {
-                stop()
+                stopGame()
             }
 
             field.drop(brick: currentBrick)
@@ -78,9 +87,59 @@ final class Tetris {
 
         output?.didUpdate(brick: currentBrick)
     }
+}
 
-    func stop() {
-        timer.invalidate()
+private extension Tetris {
+    private func updateTimer(state: State) {
+        switch state {
+
+        case .stopped, .paused:
+            timer?.invalidate()
+            timer = nil
+        case .playing:
+            timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+                self.runLoop()
+            }
+        }
+    }
+
+    func stopGame() {
+        state = .stopped
+
+        updateTimer(state: state)
+    }
+
+    func unpauseGame() {
+        state = .playing
+
+        updateTimer(state: state)
+    }
+
+    func pauseGame() {
+        guard state == .playing else {
+            return
+        }
+
+        state = .paused
+
+        updateTimer(state: state)
+    }
+
+    func startGame() {
+        guard state == .stopped else {
+            return
+        }
+
+        score = 0
+        field.clear()
+
+        output?.didUpdate(score: score)
+        output?.didUpdate(field: field)
+
+        getNewBrick()
+
+        state = .paused
+        unpauseGame()
     }
 }
 
@@ -90,19 +149,11 @@ extension Tetris: TetrisInput {
     }
 
     public func start() {
-        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
-            self.runLoop()
-        }
-
         output?.didUpdate(parameters: TetrisParameters(
             fieldDimensions: field.dimensions
         ))
 
-        score = 0
-
-        output?.didUpdate(score: score)
-
-        getNewBrick()
+        startGame()
     }
 
     private func update(nextBrick: Brick) {
@@ -121,5 +172,26 @@ extension Tetris: TetrisInput {
 
     public func rotate() {
         update(nextBrick: currentBrick.rotated())
+    }
+
+    public func drop() {
+        while field.validate(brick: currentBrick.moved(direction: .down)) {
+            move(direction: .down)
+        }
+
+        field.drop(brick: currentBrick)
+
+        output?.didUpdate(field: field)
+    }
+
+    public func playPause() {
+        switch state {
+        case .stopped:
+            startGame()
+        case .paused:
+            unpauseGame()
+        case .playing:
+            pauseGame()
+        }
     }
 }

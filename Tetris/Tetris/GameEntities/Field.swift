@@ -23,9 +23,7 @@ public final class Field {
     init(dimensions: Dimensions = .zero) {
         self.dimensions = dimensions
 
-        (0..<height).forEach { _ in
-            addEmptyRow()
-        }
+        clear()
     }
 
     private func addEmptyRow() {
@@ -89,5 +87,13 @@ public final class Field {
     func drop(row index: Int) {
         removeRow(at: index)
         addEmptyRow()
+    }
+
+    func clear() {
+        cells = []
+
+        (0..<height).forEach { _ in
+            addEmptyRow()
+        }
     }
 }

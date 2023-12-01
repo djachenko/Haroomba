@@ -44,6 +44,14 @@ public class GameViewController: UIViewController {
     @IBAction private func didTapRotateButton() {
         output?.didTapRotateButton()
     }
+
+    @IBAction private func didTapDropButton() {
+        output?.didTapDropButton()
+    }
+
+    @IBAction private func didTapPauseButton() {
+        output?.didTapPauseButton()
+    }
 }
 
 extension GameViewController: GameViewProtocol {
