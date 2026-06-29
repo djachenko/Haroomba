@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		114E35FF99406B8A24826A0A /* Pods_Haroomba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 746A4458EEA6899328C53E24 /* Pods_Haroomba.framework */; };
-		BB8874B3F78D8F05B888094B /* HaroombaAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB887CD33602FF7307AF1BAC /* HaroombaAssembler.swift */; };
 		D034CF8A2B162A26005DBB7B /* TestUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D034CF892B162A26005DBB7B /* TestUI.framework */; };
 		D034CF8B2B162A26005DBB7B /* TestUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D034CF892B162A26005DBB7B /* TestUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D034CF8D2B162A2A005DBB7B /* Tetris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09FC8882B150E6800ACF5FB /* Tetris.framework */; };
@@ -17,6 +15,31 @@
 		D0E6EFF72B0CBA03000D8048 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E6EFF62B0CBA03000D8048 /* SceneDelegate.swift */; };
 		D0E6EFFE2B0CBA04000D8048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E6EFFD2B0CBA04000D8048 /* Assets.xcassets */; };
 		D0E6F0012B0CBA04000D8048 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0E6EFFF2B0CBA04000D8048 /* LaunchScreen.storyboard */; };
+		SWIN0005BUILDF000001HAROOM /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = SWIN0002PRODDEP00001HAROOM /* Swinject */; };
+		SWIN0006BUILDF000002HAROOM /* SwinjectAutoregistration in Frameworks */ = {isa = PBXBuildFile; productRef = SWIN0004PRODDEP00002HAROOM /* SwinjectAutoregistration */; };
+		HAR0001BUILDF000001HAROOM /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0001FILEREF000001HAROOM /* GameSettings.swift */; };
+		HAR0002BUILDF000002HAROOM /* LocalLeaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0002FILEREF000002HAROOM /* LocalLeaderboard.swift */; };
+		HAR0003BUILDF000003HAROOM /* PlayerID.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0003FILEREF000003HAROOM /* PlayerID.swift */; };
+		HAR0004BUILDF000004HAROOM /* TetrisAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0004FILEREF000004HAROOM /* TetrisAssembly.swift */; };
+		HAR0005BUILDF000005HAROOM /* ARAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0005FILEREF000005HAROOM /* ARAssembly.swift */; };
+		HAR0006BUILDF000006HAROOM /* AppAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0006FILEREF000006HAROOM /* AppAssembler.swift */; };
+		HAR0007BUILDF000007HAROOM /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0007FILEREF000007HAROOM /* MainMenuView.swift */; };
+		HAR0008BUILDF000008HAROOM /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0008FILEREF000008HAROOM /* SettingsView.swift */; };
+		HAR0009BUILDF000009HAROOM /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0009FILEREF000009HAROOM /* GameOverView.swift */; };
+		HAR0010BUILDF000010HAROOM /* MultiplayerMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0010FILEREF000010HAROOM /* MultiplayerMenuView.swift */; };
+		HAR0011BUILDF000011HAROOM /* MPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0011FILEREF000011HAROOM /* MPSession.swift */; };
+		HAR0012BUILDF000012HAROOM /* MPMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0012FILEREF000012HAROOM /* MPMessage.swift */; };
+		HAR0013BUILDF000013HAROOM /* CylinderLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0013FILEREF000013HAROOM /* CylinderLayout.swift */; };
+		HAR0014BUILDF000014HAROOM /* ARGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0014FILEREF000014HAROOM /* ARGameViewController.swift */; };
+		HAR0015BUILDF000015HAROOM /* ARGameRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0015FILEREF000015HAROOM /* ARGameRenderer.swift */; };
+		HAR0016BUILDF000016HAROOM /* ARInputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0016FILEREF000016HAROOM /* ARInputHandler.swift */; };
+		HAR0017BUILDF000017HAROOM /* PauseAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0017FILEREF000017HAROOM /* PauseAnimator.swift */; };
+		HAR0018BUILDF000018HAROOM /* RingClearAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0018FILEREF000018HAROOM /* RingClearAnimator.swift */; };
+		HAR0019BUILDF000019HAROOM /* InstantRingClearAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0019FILEREF000019HAROOM /* InstantRingClearAnimator.swift */; };
+		HAR0020BUILDF000020HAROOM /* DissolveRingClearAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0020FILEREF000020HAROOM /* DissolveRingClearAnimator.swift */; };
+		HAR0021BUILDF000021HAROOM /* GameHUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0021FILEREF000021HAROOM /* GameHUDView.swift */; };
+		HAR0022BUILDF000022HAROOM /* TutorialOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0022FILEREF000022HAROOM /* TutorialOverlayView.swift */; };
+		HAR0023BUILDF000023HAROOM /* AROnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0023FILEREF000023HAROOM /* AROnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,10 +58,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		022129DFCB39FD1279497F90 /* Pods-Haroomba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Haroomba.release.xcconfig"; path = "Target Support Files/Pods-Haroomba/Pods-Haroomba.release.xcconfig"; sourceTree = "<group>"; };
-		746A4458EEA6899328C53E24 /* Pods_Haroomba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Haroomba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CD4F5F7ECA9516832897038 /* Pods-Haroomba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Haroomba.debug.xcconfig"; path = "Target Support Files/Pods-Haroomba/Pods-Haroomba.debug.xcconfig"; sourceTree = "<group>"; };
-		BB887CD33602FF7307AF1BAC /* HaroombaAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaroombaAssembler.swift; sourceTree = "<group>"; };
 		D034CF892B162A26005DBB7B /* TestUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TestUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09FC8882B150E6800ACF5FB /* Tetris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Tetris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E6EFF12B0CBA03000D8048 /* Haroomba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Haroomba.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +66,29 @@
 		D0E6EFFD2B0CBA04000D8048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0E6F0002B0CBA04000D8048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0E6F0022B0CBA04000D8048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		HAR0001FILEREF000001HAROOM /* GameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
+		HAR0002FILEREF000002HAROOM /* LocalLeaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLeaderboard.swift; sourceTree = "<group>"; };
+		HAR0003FILEREF000003HAROOM /* PlayerID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerID.swift; sourceTree = "<group>"; };
+		HAR0004FILEREF000004HAROOM /* TetrisAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetrisAssembly.swift; sourceTree = "<group>"; };
+		HAR0005FILEREF000005HAROOM /* ARAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARAssembly.swift; sourceTree = "<group>"; };
+		HAR0006FILEREF000006HAROOM /* AppAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembler.swift; sourceTree = "<group>"; };
+		HAR0007FILEREF000007HAROOM /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		HAR0008FILEREF000008HAROOM /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		HAR0009FILEREF000009HAROOM /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		HAR0010FILEREF000010HAROOM /* MultiplayerMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerMenuView.swift; sourceTree = "<group>"; };
+		HAR0011FILEREF000011HAROOM /* MPSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPSession.swift; sourceTree = "<group>"; };
+		HAR0012FILEREF000012HAROOM /* MPMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPMessage.swift; sourceTree = "<group>"; };
+		HAR0013FILEREF000013HAROOM /* CylinderLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CylinderLayout.swift; sourceTree = "<group>"; };
+		HAR0014FILEREF000014HAROOM /* ARGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARGameViewController.swift; sourceTree = "<group>"; };
+		HAR0015FILEREF000015HAROOM /* ARGameRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARGameRenderer.swift; sourceTree = "<group>"; };
+		HAR0016FILEREF000016HAROOM /* ARInputHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARInputHandler.swift; sourceTree = "<group>"; };
+		HAR0017FILEREF000017HAROOM /* PauseAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseAnimator.swift; sourceTree = "<group>"; };
+		HAR0018FILEREF000018HAROOM /* RingClearAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingClearAnimator.swift; sourceTree = "<group>"; };
+		HAR0019FILEREF000019HAROOM /* InstantRingClearAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantRingClearAnimator.swift; sourceTree = "<group>"; };
+		HAR0020FILEREF000020HAROOM /* DissolveRingClearAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DissolveRingClearAnimator.swift; sourceTree = "<group>"; };
+		HAR0021FILEREF000021HAROOM /* GameHUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHUDView.swift; sourceTree = "<group>"; };
+		HAR0022FILEREF000022HAROOM /* TutorialOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialOverlayView.swift; sourceTree = "<group>"; };
+		HAR0023FILEREF000023HAROOM /* AROnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AROnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,40 +97,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				D034CF8A2B162A26005DBB7B /* TestUI.framework in Frameworks */,
+				SWIN0005BUILDF000001HAROOM /* Swinject in Frameworks */,
+				SWIN0006BUILDF000002HAROOM /* SwinjectAutoregistration in Frameworks */,
 				D034CF8D2B162A2A005DBB7B /* Tetris.framework in Frameworks */,
-				114E35FF99406B8A24826A0A /* Pods_Haroomba.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A3DBE1383795A57788C3B2A0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8CD4F5F7ECA9516832897038 /* Pods-Haroomba.debug.xcconfig */,
-				022129DFCB39FD1279497F90 /* Pods-Haroomba.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		D09FC8872B150E6800ACF5FB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D034CF892B162A26005DBB7B /* TestUI.framework */,
-				D09FC8882B150E6800ACF5FB /* Tetris.framework */,
-				746A4458EEA6899328C53E24 /* Pods_Haroomba.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		D0E6EFE82B0CBA03000D8048 = {
 			isa = PBXGroup;
 			children = (
 				D0E6EFF32B0CBA03000D8048 /* Haroomba */,
 				D0E6EFF22B0CBA03000D8048 /* Products */,
-				D09FC8872B150E6800ACF5FB /* Frameworks */,
-				A3DBE1383795A57788C3B2A0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,7 +130,6 @@
 				D0E6EFFD2B0CBA04000D8048 /* Assets.xcassets */,
 				D0E6EFFF2B0CBA04000D8048 /* LaunchScreen.storyboard */,
 				D0E6F0022B0CBA04000D8048 /* Info.plist */,
-				BB887CD33602FF7307AF1BAC /* HaroombaAssembler.swift */,
 			);
 			path = Haroomba;
 			sourceTree = "<group>";
@@ -120,12 +141,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0E6F0052B0CBA04000D8048 /* Build configuration list for PBXNativeTarget "Haroomba" */;
 			buildPhases = (
-				26A87E71BD79C5E72D71D25B /* [CP] Check Pods Manifest.lock */,
 				D0E6EFED2B0CBA03000D8048 /* Sources */,
 				D0E6EFEE2B0CBA03000D8048 /* Frameworks */,
 				D0E6EFEF2B0CBA03000D8048 /* Resources */,
 				D034CF8C2B162A26005DBB7B /* Embed Frameworks */,
-				8938B887271697D2E0107AAA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,45 +201,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		26A87E71BD79C5E72D71D25B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Haroomba-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8938B887271697D2E0107AAA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Haroomba/Pods-Haroomba-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Haroomba/Pods-Haroomba-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Haroomba/Pods-Haroomba-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -230,7 +210,6 @@
 			files = (
 				D0E6EFF52B0CBA03000D8048 /* AppDelegate.swift in Sources */,
 				D0E6EFF72B0CBA03000D8048 /* SceneDelegate.swift in Sources */,
-				BB8874B3F78D8F05B888094B /* HaroombaAssembler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +279,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -357,7 +336,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -369,7 +348,6 @@
 		};
 		D0E6F0062B0CBA04000D8048 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CD4F5F7ECA9516832897038 /* Pods-Haroomba.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -392,14 +370,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.djachenko.Haroomba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		D0E6F0072B0CBA04000D8048 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 022129DFCB39FD1279497F90 /* Pods-Haroomba.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -422,7 +399,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.djachenko.Haroomba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -449,6 +426,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		SWIN0001PKGREF000001HAROOM /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.0;
+			};
+		};
+		SWIN0003PKGREF000002HAROOM /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/SwinjectAutoregistration";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		SWIN0002PRODDEP00001HAROOM /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = SWIN0001PKGREF000001HAROOM /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		SWIN0004PRODDEP00002HAROOM /* SwinjectAutoregistration */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = SWIN0003PKGREF000002HAROOM /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */;
+			productName = SwinjectAutoregistration;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D0E6EFE92B0CBA03000D8048 /* Project object */;
 }
