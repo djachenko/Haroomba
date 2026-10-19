@@ -17,6 +17,7 @@
 		D0E6F0012B0CBA04000D8048 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0E6EFFF2B0CBA04000D8048 /* LaunchScreen.storyboard */; };
 		SWIN0005BUILDF000001HAROOM /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = SWIN0002PRODDEP00001HAROOM /* Swinject */; };
 		SWIN0006BUILDF000002HAROOM /* SwinjectAutoregistration in Frameworks */ = {isa = PBXBuildFile; productRef = SWIN0004PRODDEP00002HAROOM /* SwinjectAutoregistration */; };
+		JKIT0003BUILDF000001HAROOM /* JustKitDI in Frameworks */ = {isa = PBXBuildFile; productRef = JKIT0002PRODDEP00001HAROOM /* JustKitDI */; };
 		HAR0001BUILDF000001HAROOM /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0001FILEREF000001HAROOM /* GameSettings.swift */; };
 		HAR0002BUILDF000002HAROOM /* LocalLeaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0002FILEREF000002HAROOM /* LocalLeaderboard.swift */; };
 		HAR0003BUILDF000003HAROOM /* PlayerID.swift in Sources */ = {isa = PBXBuildFile; fileRef = HAR0003FILEREF000003HAROOM /* PlayerID.swift */; };
@@ -66,29 +67,29 @@
 		D0E6EFFD2B0CBA04000D8048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0E6F0002B0CBA04000D8048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0E6F0022B0CBA04000D8048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		HAR0001FILEREF000001HAROOM /* GameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
-		HAR0002FILEREF000002HAROOM /* LocalLeaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLeaderboard.swift; sourceTree = "<group>"; };
-		HAR0003FILEREF000003HAROOM /* PlayerID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerID.swift; sourceTree = "<group>"; };
-		HAR0004FILEREF000004HAROOM /* TetrisAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetrisAssembly.swift; sourceTree = "<group>"; };
-		HAR0005FILEREF000005HAROOM /* ARAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARAssembly.swift; sourceTree = "<group>"; };
-		HAR0006FILEREF000006HAROOM /* AppAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembler.swift; sourceTree = "<group>"; };
-		HAR0007FILEREF000007HAROOM /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
-		HAR0008FILEREF000008HAROOM /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		HAR0009FILEREF000009HAROOM /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
-		HAR0010FILEREF000010HAROOM /* MultiplayerMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerMenuView.swift; sourceTree = "<group>"; };
-		HAR0011FILEREF000011HAROOM /* MPSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPSession.swift; sourceTree = "<group>"; };
-		HAR0012FILEREF000012HAROOM /* MPMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPMessage.swift; sourceTree = "<group>"; };
-		HAR0013FILEREF000013HAROOM /* CylinderLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CylinderLayout.swift; sourceTree = "<group>"; };
-		HAR0014FILEREF000014HAROOM /* ARGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARGameViewController.swift; sourceTree = "<group>"; };
-		HAR0015FILEREF000015HAROOM /* ARGameRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARGameRenderer.swift; sourceTree = "<group>"; };
-		HAR0016FILEREF000016HAROOM /* ARInputHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARInputHandler.swift; sourceTree = "<group>"; };
-		HAR0017FILEREF000017HAROOM /* PauseAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseAnimator.swift; sourceTree = "<group>"; };
-		HAR0018FILEREF000018HAROOM /* RingClearAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingClearAnimator.swift; sourceTree = "<group>"; };
-		HAR0019FILEREF000019HAROOM /* InstantRingClearAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantRingClearAnimator.swift; sourceTree = "<group>"; };
-		HAR0020FILEREF000020HAROOM /* DissolveRingClearAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DissolveRingClearAnimator.swift; sourceTree = "<group>"; };
-		HAR0021FILEREF000021HAROOM /* GameHUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHUDView.swift; sourceTree = "<group>"; };
-		HAR0022FILEREF000022HAROOM /* TutorialOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialOverlayView.swift; sourceTree = "<group>"; };
-		HAR0023FILEREF000023HAROOM /* AROnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AROnboardingView.swift; sourceTree = "<group>"; };
+		HAR0001FILEREF000001HAROOM /* GameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/GameSettings.swift; sourceTree = "<group>"; };
+		HAR0002FILEREF000002HAROOM /* LocalLeaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/LocalLeaderboard.swift; sourceTree = "<group>"; };
+		HAR0003FILEREF000003HAROOM /* PlayerID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/PlayerID.swift; sourceTree = "<group>"; };
+		HAR0004FILEREF000004HAROOM /* TetrisAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI/TetrisAssembly.swift; sourceTree = "<group>"; };
+		HAR0005FILEREF000005HAROOM /* ARAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI/ARAssembly.swift; sourceTree = "<group>"; };
+		HAR0006FILEREF000006HAROOM /* AppAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI/AppAssembler.swift; sourceTree = "<group>"; };
+		HAR0007FILEREF000007HAROOM /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu/MainMenuView.swift; sourceTree = "<group>"; };
+		HAR0008FILEREF000008HAROOM /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu/SettingsView.swift; sourceTree = "<group>"; };
+		HAR0009FILEREF000009HAROOM /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOver/GameOverView.swift; sourceTree = "<group>"; };
+		HAR0010FILEREF000010HAROOM /* MultiplayerMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multiplayer/MultiplayerMenuView.swift; sourceTree = "<group>"; };
+		HAR0011FILEREF000011HAROOM /* MPSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multiplayer/MPSession.swift; sourceTree = "<group>"; };
+		HAR0012FILEREF000012HAROOM /* MPMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multiplayer/MPMessage.swift; sourceTree = "<group>"; };
+		HAR0013FILEREF000013HAROOM /* CylinderLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR/CylinderLayout.swift; sourceTree = "<group>"; };
+		HAR0014FILEREF000014HAROOM /* ARGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR/ARGameViewController.swift; sourceTree = "<group>"; };
+		HAR0015FILEREF000015HAROOM /* ARGameRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR/ARGameRenderer.swift; sourceTree = "<group>"; };
+		HAR0016FILEREF000016HAROOM /* ARInputHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR/ARInputHandler.swift; sourceTree = "<group>"; };
+		HAR0017FILEREF000017HAROOM /* PauseAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR/Animations/PauseAnimator.swift; sourceTree = "<group>"; };
+		HAR0018FILEREF000018HAROOM /* RingClearAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR/Animations/RingClearAnimator.swift; sourceTree = "<group>"; };
+		HAR0019FILEREF000019HAROOM /* InstantRingClearAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR/Animations/InstantRingClearAnimator.swift; sourceTree = "<group>"; };
+		HAR0020FILEREF000020HAROOM /* DissolveRingClearAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR/Animations/DissolveRingClearAnimator.swift; sourceTree = "<group>"; };
+		HAR0021FILEREF000021HAROOM /* GameHUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR/HUD/GameHUDView.swift; sourceTree = "<group>"; };
+		HAR0022FILEREF000022HAROOM /* TutorialOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR/HUD/TutorialOverlayView.swift; sourceTree = "<group>"; };
+		HAR0023FILEREF000023HAROOM /* AROnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR/Onboarding/AROnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 				D034CF8A2B162A26005DBB7B /* TestUI.framework in Frameworks */,
 				SWIN0005BUILDF000001HAROOM /* Swinject in Frameworks */,
 				SWIN0006BUILDF000002HAROOM /* SwinjectAutoregistration in Frameworks */,
+				JKIT0003BUILDF000001HAROOM /* JustKitDI in Frameworks */,
 				D034CF8D2B162A2A005DBB7B /* Tetris.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +132,29 @@
 				D0E6EFFD2B0CBA04000D8048 /* Assets.xcassets */,
 				D0E6EFFF2B0CBA04000D8048 /* LaunchScreen.storyboard */,
 				D0E6F0022B0CBA04000D8048 /* Info.plist */,
+				HAR0001FILEREF000001HAROOM /* GameSettings.swift */,
+				HAR0002FILEREF000002HAROOM /* LocalLeaderboard.swift */,
+				HAR0003FILEREF000003HAROOM /* PlayerID.swift */,
+				HAR0004FILEREF000004HAROOM /* TetrisAssembly.swift */,
+				HAR0005FILEREF000005HAROOM /* ARAssembly.swift */,
+				HAR0006FILEREF000006HAROOM /* AppAssembler.swift */,
+				HAR0007FILEREF000007HAROOM /* MainMenuView.swift */,
+				HAR0008FILEREF000008HAROOM /* SettingsView.swift */,
+				HAR0009FILEREF000009HAROOM /* GameOverView.swift */,
+				HAR0010FILEREF000010HAROOM /* MultiplayerMenuView.swift */,
+				HAR0011FILEREF000011HAROOM /* MPSession.swift */,
+				HAR0012FILEREF000012HAROOM /* MPMessage.swift */,
+				HAR0013FILEREF000013HAROOM /* CylinderLayout.swift */,
+				HAR0014FILEREF000014HAROOM /* ARGameViewController.swift */,
+				HAR0015FILEREF000015HAROOM /* ARGameRenderer.swift */,
+				HAR0016FILEREF000016HAROOM /* ARInputHandler.swift */,
+				HAR0017FILEREF000017HAROOM /* PauseAnimator.swift */,
+				HAR0018FILEREF000018HAROOM /* RingClearAnimator.swift */,
+				HAR0019FILEREF000019HAROOM /* InstantRingClearAnimator.swift */,
+				HAR0020FILEREF000020HAROOM /* DissolveRingClearAnimator.swift */,
+				HAR0021FILEREF000021HAROOM /* GameHUDView.swift */,
+				HAR0022FILEREF000022HAROOM /* TutorialOverlayView.swift */,
+				HAR0023FILEREF000023HAROOM /* AROnboardingView.swift */,
 			);
 			path = Haroomba;
 			sourceTree = "<group>";
@@ -151,6 +176,11 @@
 			dependencies = (
 			);
 			name = Haroomba;
+			packageProductDependencies = (
+				SWIN0002PRODDEP00001HAROOM /* Swinject */,
+				SWIN0004PRODDEP00002HAROOM /* SwinjectAutoregistration */,
+				JKIT0002PRODDEP00001HAROOM /* JustKitDI */,
+			);
 			productName = Haroomba;
 			productReference = D0E6EFF12B0CBA03000D8048 /* Haroomba.app */;
 			productType = "com.apple.product-type.application";
@@ -179,6 +209,11 @@
 				Base,
 			);
 			mainGroup = D0E6EFE82B0CBA03000D8048;
+			packageReferences = (
+				SWIN0001PKGREF000001HAROOM /* XCRemoteSwiftPackageReference "Swinject" */,
+				SWIN0003PKGREF000002HAROOM /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */,
+				JKIT0001PKGREF000001HAROOM /* XCRemoteSwiftPackageReference "justkit-swift" */,
+			);
 			productRefGroup = D0E6EFF22B0CBA03000D8048 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -210,6 +245,29 @@
 			files = (
 				D0E6EFF52B0CBA03000D8048 /* AppDelegate.swift in Sources */,
 				D0E6EFF72B0CBA03000D8048 /* SceneDelegate.swift in Sources */,
+				HAR0001BUILDF000001HAROOM /* GameSettings.swift in Sources */,
+				HAR0002BUILDF000002HAROOM /* LocalLeaderboard.swift in Sources */,
+				HAR0003BUILDF000003HAROOM /* PlayerID.swift in Sources */,
+				HAR0004BUILDF000004HAROOM /* TetrisAssembly.swift in Sources */,
+				HAR0005BUILDF000005HAROOM /* ARAssembly.swift in Sources */,
+				HAR0006BUILDF000006HAROOM /* AppAssembler.swift in Sources */,
+				HAR0007BUILDF000007HAROOM /* MainMenuView.swift in Sources */,
+				HAR0008BUILDF000008HAROOM /* SettingsView.swift in Sources */,
+				HAR0009BUILDF000009HAROOM /* GameOverView.swift in Sources */,
+				HAR0010BUILDF000010HAROOM /* MultiplayerMenuView.swift in Sources */,
+				HAR0011BUILDF000011HAROOM /* MPSession.swift in Sources */,
+				HAR0012BUILDF000012HAROOM /* MPMessage.swift in Sources */,
+				HAR0013BUILDF000013HAROOM /* CylinderLayout.swift in Sources */,
+				HAR0014BUILDF000014HAROOM /* ARGameViewController.swift in Sources */,
+				HAR0015BUILDF000015HAROOM /* ARGameRenderer.swift in Sources */,
+				HAR0016BUILDF000016HAROOM /* ARInputHandler.swift in Sources */,
+				HAR0017BUILDF000017HAROOM /* PauseAnimator.swift in Sources */,
+				HAR0018BUILDF000018HAROOM /* RingClearAnimator.swift in Sources */,
+				HAR0019BUILDF000019HAROOM /* InstantRingClearAnimator.swift in Sources */,
+				HAR0020BUILDF000020HAROOM /* DissolveRingClearAnimator.swift in Sources */,
+				HAR0021BUILDF000021HAROOM /* GameHUDView.swift in Sources */,
+				HAR0022BUILDF000022HAROOM /* TutorialOverlayView.swift in Sources */,
+				HAR0023BUILDF000023HAROOM /* AROnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +428,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.djachenko.Haroomba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -399,6 +459,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.djachenko.Haroomba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -444,6 +506,14 @@
 				minimumVersion = 2.8.0;
 			};
 		};
+		JKIT0001PKGREF000001HAROOM /* XCRemoteSwiftPackageReference "justkit-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/djachenko/justkit-swift.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -456,6 +526,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = SWIN0003PKGREF000002HAROOM /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */;
 			productName = SwinjectAutoregistration;
+		};
+		JKIT0002PRODDEP00001HAROOM /* JustKitDI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = JKIT0001PKGREF000001HAROOM /* XCRemoteSwiftPackageReference "justkit-swift" */;
+			productName = JustKitDI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

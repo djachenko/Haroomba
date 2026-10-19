@@ -1,19 +1,18 @@
+import JustKitDI
 import Swinject
 
 final class ARAssembly: Assembly {
     func assemble(container: Container) {
-        container.register(GameSettings.self) { _ in .shared }
+        container.autoregisterOnMain(GameSettings.init)
             .inObjectScope(.container)
 
-        container.register(LocalLeaderboard.self) { _ in .shared }
+        container.autoregisterOnMain(LocalLeaderboard.init)
             .inObjectScope(.container)
 
-        container.register(ARGameRenderer.self) { r in
-            ARGameRenderer(settings: r.resolve(GameSettings.self)!)
-        }.inObjectScope(.transient)
+        container.autoregisterOnMain(ARGameRenderer.init)
+            .inObjectScope(.transient)
 
-        container.register(ARInputHandler.self) { r in
-            ARInputHandler(settings: r.resolve(GameSettings.self)!)
-        }.inObjectScope(.transient)
+        container.autoregisterOnMain(ARInputHandler.init)
+            .inObjectScope(.transient)
     }
 }
