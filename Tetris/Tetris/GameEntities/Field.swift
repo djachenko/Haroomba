@@ -10,11 +10,11 @@ import Foundation
 public final class Field {
     public private(set) var cells: [[CellModel?]] = []
 
-    var width: Int {
+    public var width: Int {
         dimensions.width
     }
 
-    var height: Int {
+    public var height: Int {
         dimensions.height
     }
 
@@ -68,7 +68,7 @@ public final class Field {
         }
     }
 
-    func checkRows() -> [Int] {
+    public func checkRows() -> [Int] {
         var result = [Int]()
 
         cells.enumerated().forEach { rowIndex, row in

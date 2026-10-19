@@ -9,7 +9,7 @@ final class ARInputHandler {
     var onDrop: (() -> Void)?
 
     private var currentTargetColumn: Int = -1
-    private var layout: CylinderLayout
+    private(set) var layout: CylinderLayout
 
     init(settings: GameSettings) {
         self.settings = settings

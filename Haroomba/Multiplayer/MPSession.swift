@@ -24,7 +24,8 @@ final class MPSession: NSObject {
     var onPeerDisconnected: ((MCPeerID) -> Void)?
 
     override init() {
-        self.peerID = MCPeerID(displayName: UIDevice.current.name)
+        let peerID = MCPeerID(displayName: UIDevice.current.name)
+        self.peerID = peerID
         self.session = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .required)
         super.init()
         session.delegate = self

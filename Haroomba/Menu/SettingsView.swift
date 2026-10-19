@@ -68,7 +68,7 @@ struct SettingsView: View {
             Button("Показать обучение снова") {
                 settings.hasSeenTutorial = false
             }
-            .foregroundStyle(.accentColor)
+            .foregroundStyle(.tint)
         }
     }
 }

@@ -74,10 +74,10 @@ struct GameOverView: View {
                 HStack {
                     Text("#\(i + 1)")
                         .font(.system(.body, design: .monospaced))
-                        .foregroundStyle(i == 0 ? .yellow : .secondary)
+                        .foregroundStyle(rankStyle(i))
                         .frame(width: 36, alignment: .leading)
                     Text("\(entry.score)")
-                        .font(.system(.body, weight: .semibold, design: .rounded))
+                        .font(.system(.body, design: .rounded, weight: .semibold))
                     Spacer()
                     Text("\(entry.ringsCleared) 🔵")
                         .font(.caption)
@@ -93,6 +93,13 @@ struct GameOverView: View {
         }
         .padding(16)
         .background(Color(uiColor: .secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 16))
+    }
+
+    private func rankStyle(_ index: Int) -> AnyShapeStyle {
+        if index == 0 {
+            return AnyShapeStyle(.yellow)
+        }
+        return AnyShapeStyle(.secondary)
     }
 
     private var actionButtons: some View {

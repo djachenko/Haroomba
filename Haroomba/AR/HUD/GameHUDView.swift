@@ -53,7 +53,7 @@ struct GameHUDView: View {
     }
 }
 
-struct BrickIcon: Equatable {
+struct BrickIcon {
     let colorIndex: Int
     let points: [(Int, Int)]
 }

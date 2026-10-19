@@ -84,7 +84,7 @@ struct MultiplayerMenuView: View {
             if !mpSession.connectedPeers.isEmpty {
                 Text("Подключено к: \(mpSession.connectedPeers.first?.displayName ?? "")")
                     .foregroundStyle(.secondary)
-                phase = .waitingToStart
+                    .onAppear { phase = .waitingToStart }
             }
         }
     }

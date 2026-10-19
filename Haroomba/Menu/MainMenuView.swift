@@ -1,4 +1,5 @@
 import SwiftUI
+import Tetris
 
 struct MainMenuView: View {
     @State private var showSettings = false
