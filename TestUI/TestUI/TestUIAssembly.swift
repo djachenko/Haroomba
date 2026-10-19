@@ -16,6 +16,7 @@ public final class TestUIAssembly: Sendable {
         let presenter = GamePresenter()
         viewController.set(presenter: presenter)
         viewController.output = presenter
+        presenter.view = viewController
 
         let tetris = makeTetrisInput(width: 9, height: 13)
         tetris.set(output: presenter)
