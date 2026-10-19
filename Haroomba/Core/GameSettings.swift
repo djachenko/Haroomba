@@ -11,7 +11,6 @@ enum RingClearAnimationMode: String, CaseIterable, Codable {
 
 @Observable
 final class GameSettings {
-    static let shared = GameSettings()
 
     var cylinderRadius: Float = 1.5 { didSet { UserDefaults.standard.set(cylinderRadius, forKey: "cylinderRadius") } }
     var blockOpacity: Float = 0.85 { didSet { UserDefaults.standard.set(blockOpacity, forKey: "blockOpacity") } }

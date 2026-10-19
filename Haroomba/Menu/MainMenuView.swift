@@ -6,7 +6,7 @@ struct MainMenuView: View {
     @State private var showMultiplayer = false
     @State private var showAR = false
 
-    let settings: GameSettings = .shared
+    let settings: GameSettings
 
     var body: some View {
         NavigationStack {

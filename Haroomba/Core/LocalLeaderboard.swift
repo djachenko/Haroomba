@@ -17,8 +17,6 @@ struct LeaderboardEntry: Codable, Identifiable {
 }
 
 final class LocalLeaderboard {
-    static let shared = LocalLeaderboard()
-
     private let key = "leaderboard"
     private let maxEntries = 10
 

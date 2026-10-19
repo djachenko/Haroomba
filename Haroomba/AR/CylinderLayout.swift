@@ -10,7 +10,7 @@ struct CylinderLayout {
 
     var arcWidth: Float { 2 * .pi * radius / Float(fieldWidth) }
 
-    init(radius: Float = 1.5, playerCount: Int = 1, settings: GameSettings = .shared) {
+    init(radius: Float = 1.5, playerCount: Int = 1, settings: GameSettings) {
         let base = settings.cylinderRadius
         self.radius = playerCount == 1 ? base : max(base, sqrtf(Float(playerCount)) * base)
     }
