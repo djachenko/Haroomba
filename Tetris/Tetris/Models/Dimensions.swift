@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Dimensions {
+public struct Dimensions: Sendable {
     public let width: Int
     public let height: Int
 

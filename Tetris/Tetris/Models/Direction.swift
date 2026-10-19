@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Direction {
+public struct Direction: Sendable {
     let dx: Int
     let dy: Int
 
