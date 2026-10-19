@@ -8,7 +8,7 @@
 import UIKit
 import Tetris
 
-public final class TestUIAssembly {
+public final class TestUIAssembly: Sendable {
     public static let instance = TestUIAssembly()
 
     public func vc() -> UIViewController {

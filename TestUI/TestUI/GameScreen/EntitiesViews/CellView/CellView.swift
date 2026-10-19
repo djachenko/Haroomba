@@ -19,7 +19,7 @@ class CellView: UIView {
 
     private var sizeConstraint: NSLayoutConstraint!
 
-    override func awakeFromNib() {
+    nonisolated override func awakeFromNib() {
         super.awakeFromNib()
 
 //        sizeConstraint = heightAnchor.constraint(equalToConstant: 10)
@@ -29,7 +29,9 @@ class CellView: UIView {
 //            sizeConstraint,
 //        ])
 //
-        translatesAutoresizingMaskIntoConstraints = false
+        MainActor.assumeIsolated {
+            translatesAutoresizingMaskIntoConstraints = false
+        }
     }
 
     func configure(cellViewModel: CellViewModel) {
