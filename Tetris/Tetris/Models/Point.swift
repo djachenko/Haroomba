@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Point {
+public struct Point: Sendable {
     public let x: Int
     public let y: Int
 

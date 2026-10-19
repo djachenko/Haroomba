@@ -7,7 +7,7 @@
 
 import Foundation
 
-public final class Brick {
+public struct Brick: Sendable {
     public internal(set) var origin: Point
     public let points: [Point]
     public let center: CGPoint
@@ -54,14 +54,6 @@ extension Brick {
                 x: origin.x + direction.dx,
                 y: origin.y + direction.dy
             )
-        )
-    }
-
-    func copy() -> Brick {
-        Brick(
-            points: points,
-            center: center,
-            origin: origin
         )
     }
 }

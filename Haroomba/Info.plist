@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Haroomba использует камеру для AR-геймплея</string>
+	<key>NSWorldSensingUsageDescription</key>
+	<string>Haroomba использует World Sensing для размещения игрового поля</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Haroomba использует локальную сеть для мультиплеера</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

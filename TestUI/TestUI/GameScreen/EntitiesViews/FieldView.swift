@@ -19,14 +19,16 @@ class FieldView: UIView {
 
     private(set) var cellSize: CGFloat = 0
 
-    override func awakeFromNib() {
+    nonisolated override func awakeFromNib() {
         super.awakeFromNib()
 
-        ratioConstraint = widthAnchor.constraint(equalTo: heightAnchor, multiplier: 0.7)
+        MainActor.assumeIsolated {
+            ratioConstraint = widthAnchor.constraint(equalTo: heightAnchor, multiplier: 0.7)
 
-        NSLayoutConstraint.activate([
-            ratioConstraint,
-        ])
+            NSLayoutConstraint.activate([
+                ratioConstraint,
+            ])
+        }
     }
 
     func set(dimension: Dimensions) {

@@ -143,6 +143,11 @@ private extension Tetris {
     }
 }
 
+public func makeTetrisInput(width: Int = 9, height: Int = 13) -> TetrisInput {
+    let field = Field(dimensions: Dimensions(width: width, height: height))
+    return Tetris(brickFactory: BrickFactory(), field: field)
+}
+
 extension Tetris: TetrisInput {
     public func set(output: TetrisOutput) {
         self.output = output

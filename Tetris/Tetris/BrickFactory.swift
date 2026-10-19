@@ -83,6 +83,6 @@ final class BrickFactory {
     ]
 
     func next() -> Brick {
-        BrickFactory.prototypes.randomElement()!.copy()
+        BrickFactory.prototypes.randomElement()!
     }
 }

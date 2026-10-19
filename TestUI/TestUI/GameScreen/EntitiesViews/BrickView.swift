@@ -25,14 +25,16 @@ class BrickView: UIView {
 
     private var cellSize: CGFloat = 0
 
-    override func awakeFromNib() {
+    nonisolated override func awakeFromNib() {
         super.awakeFromNib()
 
-        subcells.forEach {
-            addSubview($0)
-        }
+        MainActor.assumeIsolated {
+            subcells.forEach {
+                addSubview($0)
+            }
 
-        translatesAutoresizingMaskIntoConstraints = false
+            translatesAutoresizingMaskIntoConstraints = false
+        }
     }
 
     func set(cellSize: CGFloat) {
